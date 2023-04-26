@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: iransans;
+    src: url(/fonts/FontsFree-Net-ir_sans.ttf);
+}
+body{
+    background-color:#f3f4f6;
+    font-family: iransans;
+    margin-top: 1rem;
+}
+
+.top-header{
+    box-shadow:0 4px 60px rgb(0, 0, 0,.04) ;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    width: auto;
+}
+.bottom-header ul li>a{
+    font-size: 16px;
+
+    /* font-weight: 500; */
+}   
+
+.top-header input{
+    font-size: .75rem;
+    line-height: 1rem;
+    border: none;
+    background-color: rgba(236,238,239,1);
+    padding:1rem 3rem 1rem .75rem ;
+}
+       /* SVG */
+header form button{
+    right:.75rem  ;
+    background-color:transparent;
+} 
+header form svg{
+    color: rgba(100,116,139,1);
+}
+/* //////lo-g-in//// */
+.login-sign-up{
+    background-color: rgba(59,130,246,.1);
+    font-size: 1rem;
+} 
+ .login-sign-up a{
+    text-decoration: none;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+header .login{
+    padding: 0 .75rem 0 1.5rem;
+    margin-left: -12px;
+    transform: translate(0,.5rem);
+}
+.sign-up{
+    background-color: rgba(59,130,246);
+    padding: 0 .75rem;
+    
+
+}
+
+.dark-mode button{
+    background-color: rgba(236,238,239,1);
+    width: 3rem;
+    height: 3rem;
+}
+.dark-mode svg{
+    color: rgba(51,65,85,1);
+    
+}   
+/*          /// bottom --header */
+.bottom-header{
+    background-color: rgba(210,214,222,1) ;
+    padding: 1.25rem 0;
+    margin:0 2.25rem;
+}
+/* MYY/// DROP/// DOWN */
+/*// MY/ MENU GRID// */
+header .my-menu-grid{
+    grid-template-columns:repeat(12,1fr);
+    gap: 1rem;
+    top: 100%;
+    transform: translate(3%,3%);
+   padding: 1.25rem;
+   width: 430px;
+}
+.item1{
+    grid-column: span 6/ span 6;
+}   
+header .my-menu-grid .box h4{
+    color: rgba(100,116,139,1);
+    font-weight: 700;
+    line-height: 1.65rem;
+    font-size: 1rem;
+}
+header .box span{
+    color: rgba(149,160,177,1);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+header .my-dropdown .disp-none{
+    display: none !important
+    ;
+}
+
+/*  */
+.bottom-header button , .bottom-header ul > li > a {
+    padding: 0 !important;
+    font-size: .9rem !important;
+    font-weight: 500 !important;
+    line-height: 1.5rem;
+    color: rgba(51,65,85,1);
+}
+.navbar-nav > li{
+    margin-left: 1.5rem !important;
+}  
+.navbar .dropdown-menu{
+    top:60px ;
+    width: 13rem !important;
+    padding: 0.75rem !important;
+}
+.navbar .dropdown-menu a{
+    padding: 1rem .75rem 1rem 0 ;
+    line-height: 1.75rem ;
+    font-size: 1.1rem ;
+    font-weight: 400 ;
+    color: rgba(51,65,85,1);
+}
+.navbar .dropdown-toggle::after{
+    margin-right:  0.5rem !important;
+}
+   /* END OF HEADER STYL */
+
+/*/////////////////////////// main prat  //////////*/
+
+/* WAYS */
+/* SLIDER section */
+
+.slider-1 .owl-carousel{
+    padding: 1.75rem 0;
+}
+.slider-1 .container{
+    padding-bottom: 2.5rem;
+}
+.slider-1 .container .box-container{
+    padding:1.5rem 1.75rem 1rem ;
+    width: 380px;
+    margin-left: 26px;
+    border: 2px solid;
+}
+.slider-1 .header-container{
+    margin-bottom: 2rem;
+}
+.slider-1 .header-container .svg-container{
+    background-color: rgba(255,220,38,1);
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.w-30{
+    width: 1.875rem;
+}
