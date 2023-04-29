@@ -212,10 +212,11 @@ header .my-dropdown .disp-none{
 }
 .last .box-container > div >div p{
     color: rgba(121,137,158,1);
+    font-size: 12px;
 }
 .last .free-access > div:first-child span{
     color: rgba(78,89,104,1);
-    font-size: .8125rem; 
+    font-size: .6925rem; 
 }
 .last .free-access > div:nth-child(even) span:first-child {
     background-color: rgba(248,212,212,1);
@@ -233,14 +234,29 @@ header .my-dropdown .disp-none{
     color: rgba(51,65,85,1);
     line-height: 2.25rem;
 }
+.last .box-container .free-price div:first-child span{
+    height: 1.5rem !important ;
+}
+.last .box-container .free-price div button{
+    height: 1.5rem !important;
+}
+.last .box-container .free-price div:last-child span{
+    color: rgba(59,130,246,1);
+}
+
 /* FOOTER OF BOXES */
 .last .box-container div:last-child {
     border-color: rgba(149,160,177,.2);
 }
-.last .box-container > div:last-child a  {
+.last .box-container > div:last-child > a  {
     color: rgba(232,28,77,1) !important;
-    line-height: 1.5rem;
+    line-height: 1.5rem !important;
 }
+.last .box-container > div:last-child > .blue-footer  {
+    color: rgba(59,130,246,1) !important;
+    line-height: 1.5rem !important;
+}
+
 
 
 
@@ -377,7 +393,8 @@ header .my-dropdown .disp-none{
     background-color: rgba(59,130,246,0.1);
     height: 1.5rem;
 }   
-.cast div:last-child span{
+/*این دو استایل پایین مربوط به بخش  اخرین دوره ها هم هست  */
+.cast div:last-child span , .last .box-container .free-price div:first-child span{
     background-color: rgba(96,116,150,.1);
     color: rgba(96,116,150,1);
     font-size: 0.75rem;
@@ -385,7 +402,7 @@ header .my-dropdown .disp-none{
     height: 1.375rem;
 }
 
-.cast .header-container div button:last-child{
+.cast .header-container div button:last-child , .last .box-container .free-price button{
     color: rgba(232,28,77,1);
     background-color: rgba(220,38,38,.1);
     font-size: .75rem;
