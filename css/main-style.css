@@ -11,6 +11,8 @@ body{
     background-color:#f3f4f6;
     font-family: iransans;
     margin-top: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .top-header{
@@ -136,21 +138,111 @@ header .my-dropdown .disp-none{
    /* END OF HEADER STYL */
 
 /*/////////////////////////// main prat  //////////*/
+/*  SECTION 1 STORY */
+/* PART1 STRY */
+.story h2{
+    font-size: 3.55rem;
+    line-height :80px ;
+    font-weight:800;
+    max-width: 546px;
+    word-spacing: -10px;
+    color: rgba(51,65,85,1);
+}
+.story p {
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-size: 20px;
+    color: rgba(121,137,158,1);
+    margin-bottom: 2rem;
+}
+.story a{
+    padding: 20px 28px;
+    font-size: 18px;
+    margin-bottom: 56px;
+}
+.story ul{
+    min-width: 36rem;
+}
+.story ul li {
+    font-size: 18px;
+    word-spacing: -3px;
+    color: rgba(78,89,104,1);
+}
+/* part2 bigSvg */
+.story .big-svg #small-svg{
+    left: 90%;
+    top: 95%;
+}
+.story .big-svg div svg{
+    color: rgba(202,207,216,1);
 
-/* WAYS */
-/* SLIDER section */
+}
+/* section- last -course */
+/* SOME  OF THE TITLE STYLES HAVE BEEN SET IN WAYS SECTION */
+/* style of title of 4 boxes */
+.last .title {
+    margin-bottom: 80px;
+}
 
+.last .box-container{
+    margin-bottom: 60px;
+    padding-top: 128px;
+}
+/*  STYLE OF 4 BOXES */
+.last img{
+    object-fit: cover;
+}
+.last .box-container div:first-child a{
+    height: 10rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////*SECTION WAYS/////////// */
+/*     // /SLIDER section//   */
+
+/*///  TITLE OF SLIDER */
+.slider-1 .title , .slider-1 .title a , .last .title , .last  a{
+    color: rgba(100,116,139,1) !important;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.275rem;
+}
+.ways  h3 , .last h3{
+    color: rgba(51,65,85,1);
+    letter-spacing: -2px;
+    word-spacing: -5px;
+    line-height: 1;
+}
+/* //////DYNAMIC //slider //// PART of ways */
+.owl-carousel .owl-item{
+    /* width: 380px !important; */
+}
 .slider-1 .owl-carousel{
     padding: 1.75rem 0;
 }
 .slider-1 .container{
     padding-bottom: 2.5rem;
 }
-.slider-1 .container .box-container{
-    padding:1.5rem 1.75rem 1rem ;
+.ways .container .box-container{
     width: 380px;
-    margin-left: 26px;
-    border: 2px solid;
+    border: 1px solid ;
+    border-color: rgba(210,214,222,.6);
+}
+.ways .box-container > div:first-child{
+    padding:1.5rem 1.75rem 1rem ;
+
 }
 .slider-1 .header-container{
     margin-bottom: 2rem;
@@ -159,7 +251,146 @@ header .my-dropdown .disp-none{
     background-color: rgba(255,220,38,1);
     width: 3.5rem;
     height: 3.5rem;
+    box-shadow: -12px 12px 24px 0 rgba(245,158,11,.2);
+    
+
+}
+.ways .box-container a{
+    color: rgba(51,65,85,1);
+}
+.ways .paragraph{
+    line-height: 1.65rem;
+    color: rgba(149,160,177,1);
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+.header-container div:last-child{
+    border: 1px solid;
+    border-color: rgba(227,230,236,1);
+}
+.header-container div:last-child span{
+    color: rgba(78,89,104,1);
+    font-size: .6875rem;
+}
+.slider-1 hr{
+    border-top: 1px solid;
+    height: 0;
+    border-color: rgba(210,214,222,.9);
 }
 .w-30{
     width: 1.875rem;
 }
+.slider-1 .footer-container {
+    padding: 1rem 2rem;
+    color: rgba(59,130,246,1);
+}
+.slider-1 .footer-container a{
+    font-size: 14px;
+    color:inherit
+}
+
+/*//////////ROOCKET ////CAST ////////SLIDER TYPE-1 ///*/
+/* //////cast title  */
+.cast .title h1{
+    color: rgba(51,65,85,1);
+    font-size: 2.5rem;
+    font-weight: 800;
+    word-spacing: -6px;
+}
+.cast .title  h2{
+    font-size: 1.0875rem;
+    font-weight: 400;
+}
+.cast .title h2 + div > a {
+    font-size: 1.275rem ;
+    line-height: 1.4;
+    font-weight: 400;
+}
+/* /// cast//  SLIDER PART  */
+
+.cast .owl-carousel  {
+    padding:40px 0 80px 0 ;
+}
+
+/* FOR TRYING  */
+.cast .box-container{
+    width: 390px !important;
+    margin-left: 16px !important;
+}
+/*  */
+
+.cast .header-container{
+    padding: 0 1.25rem !important;
+    margin-bottom: .75rem;
+}
+.cast .header-container > div:first-child{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(78,89,104,1);
+    border: 1px solid  rgba(78,89,104,.1);
+}
+.cast .header-container div button:first-child{
+    color: rgba(59,130,246,1);
+    background-color: rgba(59,130,246,0.1);
+    height: 1.5rem;
+}   
+.cast div:last-child span{
+    background-color: rgba(96,116,150,.1);
+    color: rgba(96,116,150,1);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    height: 1.375rem;
+}
+
+.cast .header-container div button:last-child{
+    color: rgba(232,28,77,1);
+    background-color: rgba(220,38,38,.1);
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: .5rem .375rem !important;
+    height: 1.25rem;
+    
+}
+.cast h3{
+    padding-top: 8px ;
+    padding-bottom: 28px;
+    margin-left: 16px !important;
+    margin-right:1.25rem !important;
+
+}
+.cast h3 a{
+    color: rgba(51,65,85,1);
+    line-height: 1.65rem;
+    font-size: 1.15rem;
+    word-spacing: -1px;
+
+}
+
+.cast .footer-container{
+    padding: 6px 20px 6px 16px;
+    border-top:1px solid;
+    border-color: rgba(149,160,177,.1);
+}
+.cast .footer-container  a:first-child , .cast .footer-container svg{
+    font-size: .6875rem;
+    color: rgba(59,130,246,1);
+}
+
+.cast .footer-container  a:last-child{
+    width: 4.625rem;
+    height: 4.625rem;
+    position: absolute;
+    left: 0;
+    z-index: 11110;
+    top: 5px;
+    overflow: hidden;
+}
+
+.cast .footer-container img{
+    object-fit: cover;
+    width: 100% !important;
+    display: block !important;
+}
+
+
