@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a{
+    text-decoration: none;
+}
+   
 @font-face {
     font-family: iransans;
     src: url(/fonts/FontsFree-Net-ir_sans.ttf);
@@ -191,19 +196,23 @@ header .my-dropdown .disp-none{
 /*  STYLE OF 4 BOXES */
 .last .box-container > div:first-child{
     top: -3rem;
-   padding-left: 2rem !important;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    width: 100%;
+   /* padding: 2rem !important; */
 
 }
 .last img{
     object-fit: cover;
+    display: block;
 }
-.last .box-container div:first-child a{
+.last .box-container div:first-child a:has(img){
     height: 10rem;
 
 }
 .last .box-container > div > div > span{
     color: rgba(59,130,246,1);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     line-height: 1rem;
     word-spacing: -2px;
 }
@@ -211,24 +220,26 @@ header .my-dropdown .disp-none{
     color: rgba(220,38,38,1); 
 }
 .last .box-container > div >div p{
-    color: rgba(121,137,158,1);
+    color: rgba(121,137,158,.9);
     font-size: 12px;
 }
 .last .free-access > div:first-child span{
-    color: rgba(78,89,104,1);
-    font-size: .6925rem; 
+    color: rgba(78,89,104,.9);
+    font-size: .5925rem; 
 }
 .last .free-access > div:nth-child(even) span:first-child {
     background-color: rgba(248,212,212,1);
-    color: rgba(232,28,77,1);
-    font-size: .625rem;
+    color: rgba(232,28,77,.9);
+    font-size: .525rem;
+    font-weight: 600 !important;
+    line-height: 1.4rem !important;
 }
 .last .free-access div:last-child div:first-child span{
-    color: rgba(149,160,177,1);
-    font-size: .625rem;
+    color: rgba(149,160,177,.9);
+    font-size: .525rem;
 }
 .last .free-access div:last-child div:first-child span:last-child{
-    color: rgba(51,65,85,1);
+    color: rgba(51,65,85,.9);
 }
 .last .free-access div:last-child div:last-child span{
     color: rgba(51,65,85,1);
@@ -251,16 +262,13 @@ header .my-dropdown .disp-none{
 .last .box-container > div:last-child > a  {
     color: rgba(232,28,77,1) !important;
     line-height: 1.5rem !important;
+    font-size: 14px !important;
 }
 .last .box-container > div:last-child > .blue-footer  {
     color: rgba(59,130,246,1) !important;
     line-height: 1.5rem !important;
+    font-size: 14px !important;
 }
-
-
-
-
-
 
 
 
@@ -294,7 +302,7 @@ header .my-dropdown .disp-none{
     padding-bottom: 2.5rem;
 }
 .ways .container .box-container{
-    width: 380px;
+    max-width: 380px;
     border: 1px solid ;
     border-color: rgba(210,214,222,.6);
 }
@@ -347,6 +355,167 @@ header .my-dropdown .disp-none{
     font-size: 14px;
     color:inherit
 }
+
+/* BANNER 1 */
+.banner-1 .container > a{
+    padding: 40px 80px;
+    background-image: linear-gradient(to right ,#104164 ,#205e8a );
+}
+.banner-1 a div:first-child> svg{
+    height: 3rem;
+    width: 3rem;
+    top: .25rem;
+}
+.banner-1 a div >h3{
+    font-size: 2.4rem;
+}
+.banner-1 a div >span{
+    color: rgba(255,220,38,1);
+    border-color: rgba(255,220,38,1) !important;
+    font-size: 14px;
+}
+.banner-1 a div >p:nth-child(2){
+    color: rgba(243,247,254,1);
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    word-spacing: -3px;
+}
+.banner-1 a div >p:nth-last-child(2){
+    font-size: 14px;
+}
+.banner-1 a div:last-child {
+    top: -3rem;
+    left: 3rem;
+}
+.banner-1 a div:last-child > svg{
+    width: 29rem;
+    height: 426px;
+}
+
+
+
+
+
+
+/*   ///NEWS SECTION /// */
+/* /fixed box/ */
+.news > .container > div:first-child{
+    padding: 5rem 3.5rem;
+    background-color: rgba(100,116,139,0.05);
+}
+.news div:first-child h4{
+    color: rgba(51,65,85,1);
+    font-size: 2.15rem;
+    word-spacing: -6px;
+}
+.news div:first-child p{
+    height: 8rem;
+    color: rgba(149,160,177,1);
+}
+
+.news .container> div:first-child a{
+    padding: .75rem 1rem ;
+    font-size: .775rem;
+    line-height: 1.25rem;
+    opacity: .86;
+}
+.news .container div > svg{
+    top: 2.5rem;
+    right:-1.75rem ;
+}
+/*/////// ABSOLUTE 4 boxes /// */
+.news > .container> div:nth-child(2){
+    margin-top: 3.125rem;
+}
+
+.news .container div:nth-child(2) a:has(img){ 
+    height: 10rem;
+}
+    
+.news .container div:nth-child(2)  a img{ 
+    object-fit: cover;
+}
+.news .container div:nth-child(2) >div >div>div img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.news .name div:first-child a{
+    color: rgba(128,146,176,1);
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+}
+.news .name > div > a:first-child {
+    color: rgba(59,130,246,1);
+    line-height: 1rem;
+    background-color: rgba(245,249,255,1);
+    font-size: 0.65rem;
+}
+/* FOOTER OF BOXES */
+.news .footer-box a{
+    color: rgba(96,116,150,1);
+    background-color: rgba(96,116,150,.1);
+    line-height: 1rem;
+    font-size: 0.65rem;
+    height: 1.125rem;
+}
+.news .footer-box button{
+    height: 1.25rem;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    padding: 1px 4px;
+}
+.news .footer-box button:not(:last-child){
+    color: rgba(232,28,77);
+    background-color: rgba(220,38,38,.1);
+}
+.news .footer-box button:not(:last-child) svg{
+    margin-top: -0.125rem;
+}
+.news .footer-box button:last-child{
+    background-color: rgba(59,130,246,.1);
+
+}
+.news .footer-box div:last-child span{
+    color: rgba(128,146,176,1);
+    line-height: 1rem;
+    font-size: 0.65rem;
+}
+
+/* FOOTER UNDER 4BOXES*/
+.news .footer{
+    padding: 0 56px;
+}
+.news .footer ul li a{
+    font-size: .775rem;
+    line-height: 1.25rem;
+}
+/* BANNER2 */
+.banner-2 {
+    padding: 48PX 64PX;
+    margin: 0 40px;
+    background: linear-gradient(to right,#8f33c4 , #d52a78 , #f4662a);
+}
+.banner-2 h6{
+    margin-inline-end: 40px;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    word-spacing: -3px;
+    
+}
+.banner-2 >a{
+    padding: 12px 20px;
+    color: rgba(164,43,180,1);
+    font-size: .8375rem;
+    line-height: 1rem;
+}
+.banner-2 > img{
+    right: 0;
+    top: -5rem;
+    /* transform: scale(1,1); */
+}
+
+
 
 /*//////////ROOCKET ////CAST ////////SLIDER TYPE-1 ///*/
 /* //////cast title  */
@@ -453,3 +622,96 @@ header .my-dropdown .disp-none{
 }
 
 
+/* ///////FOOTER ///////// */
+
+/* top footer */
+footer .top-footer .logo{
+    padding-inline-end: 2rem;
+}
+footer .top-footer ul{
+    padding-inline-start: 2rem;
+}
+/* MAIN FOOTER */
+/* aboute */
+footer .main-footer .about div:has(form){
+    margin-top: 44px;
+}
+.main-footer  h3{
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+}
+.main-footer .about  div > p{
+    font-size: .83rem;
+    line-height: 1.75rem;
+}
+.main-footer .about div div >a   {
+    font-size: .7125rem;
+}
+.main-footer .about form > div{
+    height: 2.5rem;
+}
+.main-footer .about form input[type="email"]{
+    direction: rtl;
+    padding: 8px 32px 8px 20px;
+}
+.main-footer .about form input[type="submit"]{
+    font-size: 0.65rem;
+    font-weight: 400;
+    padding:0 20px;
+}
+.main-footer .about form input::placeholder{
+    line-height: 1rem;
+    font-size: 0.52rem;
+}
+footer .main-footer .about form svg{
+    right: 1rem;
+    transform: translateY(-50%);
+}
+   
+footer .main-footer .site-parts ul li{
+    margin-bottom: 0.75rem;
+    list-style-type:none;
+}
+footer .main-footer  ul li a ,footer .main-footer  ul li{
+    color: rgba(131,144,162,1) !important;
+    font-size: .85rem;
+    line-height: 1.5rem;
+}
+.dot {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-bottom: .25rem;
+    height: 0.25rem;
+    width: 0.25rem;
+    border-radius: 10000px;
+    background-color: rgba(59,130,246,.3);
+}
+.circle{
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-bottom: .25rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 10000px;
+    background-color: rgba(59,130,246,.3);
+}
+.sm-circle{
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-bottom: .25rem;
+    height: .5rem;
+    width: .5rem;
+    border-radius: 10000px;
+    background-color: rgba(59,130,246,.3);
+}
+
+footer .main-footer .contact-us li{
+    margin-bottom: 28px;
+}   
+
+.footer .trust{
+    margin-top: 36px;
+}
+.footer .trust img{
+    max-height: 100%;
+}
