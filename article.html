@@ -11,9 +11,8 @@
     <link rel="stylesheet" href=".//lib/bootstrap/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href=".//css/main-style.css">
     <link rel="stylesheet" href=".//css/aricle-style.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.2.4/modules/scrollbar/scrollbar.min.css"> -->
-    <!-- <link rel="stylesheet" href=".//lib/package/swiper.min.css"> -->
-    <link rel="stylesheet" href=".//lib/package/swiper-bundle.min.css">
+    <link rel="stylesheet" href=".//lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href=".//lib/OwlCarousel2/dist/assets/owl.theme.default.css">
 </head>
 
 <body>
@@ -294,7 +293,7 @@
         </div>
     </header>
     <main>
-        <div class=" container-fluid">
+        <div class=" container">
             <div class="d-flex row ">
                 <aside class="col-3">
                     <div class="popular-tag border rounded-3">
@@ -647,14 +646,15 @@
 
 
                     </div>
+                    <!-- برگزیده ها -->
                     <div class="selected">
                         <div class="title px-2 d-flex align-items-center">
                             <img class="mh-100" src=".//image/roocket.png" alt="">
                             <h3>برگزیده هفته</h3>
                         </div>
-                        <div class="swiper body slider">
-                            <div class="swiper-wraper">
-                                <div class="swiper-slide">
+                        <div class=" body slider">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
                                     <div class=" archive-box h-100 d-flex flex-column bg-white shadow-sm rounded p-3">
                                         <!--P1 IMG -->
                                         <a class="overflow-hidden rounded-1 w-100 d-block" href="#">
@@ -768,7 +768,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="item">
                                     <div class=" archive-box h-100 d-flex flex-column bg-white shadow-sm rounded p-3">
                                         <!--P1 IMG -->
                                         <a class="overflow-hidden rounded-1 w-100 d-block" href="#">
@@ -882,7 +882,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="item">
                                     <div class=" archive-box h-100 d-flex flex-column bg-white shadow-sm rounded p-3">
                                         <!--P1 IMG -->
                                         <a class="overflow-hidden rounded-1 w-100 d-block" href="#">
@@ -996,7 +996,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="item">
                                     <div class=" archive-box h-100 d-flex flex-column bg-white shadow-sm rounded p-3">
                                         <!--P1 IMG -->
                                         <a class="overflow-hidden rounded-1 w-100 d-block" href="#">
@@ -1110,7 +1110,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="item">
                                     <div class=" archive-box h-100 d-flex flex-column bg-white shadow-sm rounded p-3">
                                         <!--P1 IMG -->
                                         <a class="overflow-hidden rounded-1 w-100 d-block" href="#">
@@ -1224,7 +1224,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="item">
                                     <div class=" archive-box h-100 d-flex flex-column bg-white shadow-sm rounded p-3">
                                         <!--P1 IMG -->
                                         <a class="overflow-hidden rounded-1 w-100 d-block" href="#">
@@ -1338,14 +1338,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                             <div class="swiper-pagination"></div>
-                             <div class="swiper-button-next">
-                                 <span class="fas fa-arrow-alt-circle-right fa-2x"></span>
-                            </div>
-                            <div class="swiper-button-prev">
-                                  <span class="fas fa-arrow-alt-circle-left fa-2x"></span>
-                             </div>
 
                             </div>
                         </div>
@@ -3008,33 +3000,36 @@
 
     <script src=".//lib/bootstrap/js/bootstrap.bundle.js"></script>
     <script src=".//lib/jQuery/jquery-3.6.0.min.js"></script>
-    <script src=".//lib/package/swiper-bundle.min.js"></script>
-
-
-
-
+    <script src=".//lib/OwlCarousel2/dist/owl.carousel.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-             direction: 'horizontal',
+         $(".owl-carousel").owlCarousel({
+            rtl: true,
             loop: true,
+            infinite: true,
+            margin: 26,
+            // outerWidth:380,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                760: {
+                    items: 2
+                },
+                992: {
+                    items: 2
+                },
+                1280: {
+                    items: 3
+                }
+            
 
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
+            }
         });
     </script>
+
+
+
+    
 </body>

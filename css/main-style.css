@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+   
+}
 
 a{
     text-decoration: none;
@@ -11,7 +14,7 @@ a{
    
 @font-face {
     font-family: iransans;
-    src: url(.//fonts/FontsFree-Net-ir_sans.ttf);
+    src: url(../fonts/FontsFree-Net-ir_sans.ttf);
 }
 body{
     background-color:#f3f4f6;
@@ -210,6 +213,16 @@ header .my-dropdown .disp-none{
     height: 10rem;
 
 }
+.last .body div:nth-child(2) a{
+    font-size: 18px;
+    color: rgba(71,84,102,1);
+    line-height: 1.75rem;
+    word-spacing: -3px;
+}
+.last .body div:nth-child(2) p{
+    line-height: 1.6rem !important;
+}
+
 .last .box-container > div > div > span{
     color: rgba(59,130,246,1);
     font-size: 0.65rem;
@@ -243,7 +256,7 @@ header .my-dropdown .disp-none{
 }
 .last .free-access div:last-child div:last-child span{
     color: rgba(51,65,85,1);
-    line-height: 2.25rem;
+    line-height: 2.15rem;
 }
 .last .box-container .free-price div:first-child span{
     height: 1.5rem !important ;
@@ -253,6 +266,8 @@ header .my-dropdown .disp-none{
 }
 .last .box-container .free-price div:last-child span{
     color: rgba(59,130,246,1);
+    font-size: 18px;
+    line-height: 1.7rem;
 }
 
 /* FOOTER OF BOXES */
@@ -269,7 +284,9 @@ header .my-dropdown .disp-none{
     line-height: 1.5rem !important;
     font-size: 14px !important;
 }
-
+.blue-color{
+    color: rgba(59,130,246,1) !important;
+}
 
 
 
@@ -279,7 +296,7 @@ header .my-dropdown .disp-none{
 /*     // /SLIDER section//   */
 
 /*///  TITLE OF SLIDER */
-.slider-1 .title , .slider-1 .title a , .last .title , .last  a{
+.slider-1 .title , .slider-1 .title a , .last .title{
     color: rgba(100,116,139,1) !important;
     font-weight: 400;
     line-height: 1.4;
