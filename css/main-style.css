@@ -11,7 +11,7 @@ a{
    
 @font-face {
     font-family: iransans;
-    src: url(/fonts/FontsFree-Net-ir_sans.ttf);
+    src: url(.//fonts/FontsFree-Net-ir_sans.ttf);
 }
 body{
     background-color:#f3f4f6;
@@ -23,7 +23,6 @@ body{
 
 .top-header{
     box-shadow:0 4px 60px rgb(0, 0, 0,.04) ;
-    padding: 1.25rem;
     border-radius: 1rem;
     width: auto;
 }
@@ -440,7 +439,7 @@ header .my-dropdown .disp-none{
     height: 1.5rem;
     width: 1.5rem;
 }
-.news .name div:first-child a{
+.news .name div:first-child a {
     color: rgba(128,146,176,1);
     font-size: 0.75rem;
     line-height: 1rem;
