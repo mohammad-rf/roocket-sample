@@ -30,6 +30,10 @@
 .mb-24{
     margin-bottom: 6rem;
 }
+
+
+
+
     
 @media screen and (min-width:576px){
     .py-sm-9{
@@ -42,6 +46,9 @@
     }
 }
 
+
+
+
 @media screen and (min-width:768px){
     .mb-md-32{
         margin-bottom: 8rem;
@@ -51,8 +58,11 @@
     }
 }
 @media screen and (min-width:992px){
-    
+  
+
 }
+
+
 @media screen and (min-width:1024px){
     .mt-lg-20{
         margin-top: 5rem;
@@ -60,11 +70,13 @@
     .mt-lg-52{
         margin-top: 13rem;
     }
-
 }
+
+
+
+
 @media screen and (min-width:1280px){
     .mt-xl-24{
         margin-top: 6rem;
     }
-
 }

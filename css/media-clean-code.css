@@ -1,0 +1,47 @@
+
+
+
+@media screen  and (min-width:640px){
+    .h-sm-450{
+        height: 450px !important;
+    }
+    .text-sm-40{
+        font-size: 2.4rem !important;
+        word-spacing: -6px !important;
+    }
+    .text-sm-xxl{
+        line-height: 2.1rem !important;
+        font-size: 22px !important;
+    }
+
+    .grid-cols-sm-2{
+        grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    }
+}
+
+
+
+/* MEDIUM */
+@media screen  and (min-width:768px){
+    .grid-cols-md-3 {
+        grid-template-columns: repeat(3,minmax(0,1fr)) !important;
+    }
+
+
+}
+
+
+@media screen and (min-width:1280px) {
+    .grid-col-lg-24{
+        grid-template-columns: repeat(24,1fr);
+    }
+    .col-span-lg-17{
+        grid-column: span 17 /span 17;
+    }
+    .col-span-lg-7{
+        grid-column: span 7/ span 7;
+    }
+}
+
+
+
