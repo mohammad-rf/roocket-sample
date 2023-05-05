@@ -41,6 +41,12 @@
     .col-span-lg-7{
         grid-column: span 7/ span 7;
     }
+    .display-lg-block{
+        display: block;
+    }
+    .display-lg-none{
+        display: none;
+    }
 }
 
 
