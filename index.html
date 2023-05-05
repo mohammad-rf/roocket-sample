@@ -1201,7 +1201,7 @@
             </div>
             <!-- SLIDER -->
             <div class="container">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-1 owl-theme">
                     <div class="item box-container rounded-3 bg-transparent  ">
                         <!-- BODY CONTAINER DIV -->
                         <div class="">
@@ -1487,8 +1487,6 @@
                             </svg>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -2752,7 +2750,7 @@
             </div>
             <!-- SLIDER podcast -->
             <div class="container">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-2  owl-theme">
                     <div class="item box-container rounded-3 bg-white shadow-sm pt-3  ">
                         <div class="header-container d-flex justify-content-between align-items-center">
                             <div class="pt-1 pe-2 fw-semibold rounded-1">
@@ -3092,12 +3090,6 @@
 
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
         </section>
@@ -3346,36 +3338,69 @@
 
 
     <script>
-        $(".owl-carousel").owlCarousel({
-            rtl: true,
-            loop: true,
-            infinite: true,
-            margin: 26,
-            // outerWidth:380,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                760: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                },
-                1200: {
-                    items: 3
-                },
-                1380: {
-                    items: 4
+        $(function(){
+
+            $(".owl-1").owlCarousel({
+                rtl: true,
+                loop: true,
+                infinite: true,
+                margin: 26,
+                // outerWidth:380,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    760: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 3
+                    },
+                    1380: {
+                        items: 4
+                    }
+    
                 }
+            });
 
-            }
-        });
 
-        $('#btn-drop').click(function () {
-            $('.my-menu-grid ').toggleClass('disp-none')
+            $(".owl-2").owlCarousel({
+                rtl: true,
+                loop: true,
+                infinite: true,
+                margin: 17,
+                // outerWidth:380,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+
+
+
+
+
+            
+                    $('#btn-drop').click(function () {
+                        $('.my-menu-grid ').toggleClass('disp-none')
+                    })
+
+
+
         })
+
     </script>
 
 
