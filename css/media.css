@@ -35,7 +35,7 @@
 
 
     
-@media screen and (min-width:576px){
+@media screen and (min-width:640px){
     .py-sm-9{
         padding-top: 2.25rem;
         padding-bottom: 2.25rem;
@@ -44,7 +44,21 @@
         padding-left:2.75rem;
         padding-right: 2.75rem;
     }
+    .px-sm-16 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .mx-sm-10 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    .top-sm-28 {
+        top: -7rem !important;
+    }
+
+
 }
+
 
 
 
@@ -56,7 +70,13 @@
     .mt-md-52{
         margin-top: 13rem;
     }
+    .text-md-2xl {
+        font-size: 20px !important;
+        line-height: 2.1rem !important;
+    }
 }
+
+
 @media screen and (min-width:992px){
   
 
@@ -74,9 +94,41 @@
 
 
 
+@media screen and (min-width:1200px){
+    .absolute-lg{
+        position: absolute;
+    }
+    .place-lg{
+        left: 1rem;
+        top: -9rem;
+    }
+}
+
+
 
 @media screen and (min-width:1280px){
     .mt-xl-24{
         margin-top: 6rem;
+    }
+    .py-lg-12 {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    .ml-lg-10 {
+        margin-left: 2.5rem !important;
+    }
+    .scale-lg-100 {
+        
+        transform: translateX(0) scale(1) !important;
+    }
+   
+    .right-lg-0{
+        right: 0 !important;
+    }
+    .top-lg-20 {
+        top: -5rem !important;
+    }
+    .text-lg-15 {
+        font-size:13px !important;
     }
 }

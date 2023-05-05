@@ -28,13 +28,19 @@ body{
     box-shadow:0 4px 60px rgb(0, 0, 0,.04) ;
     border-radius: 1rem;
     width: auto;
+    padding: 1.25rem;
 }
 .bottom-header ul li>a{
     font-size: 16px;
 
     /* font-weight: 500; */
 }   
-
+.top-header .ham-menu{
+    color: rgba(51,65,85,1);
+}
+.top-header .logo{
+    margin-left: -1.5rem;
+}
 .top-header input{
     font-size: .75rem;
     line-height: 1rem;
@@ -509,27 +515,29 @@ header .my-dropdown .disp-none{
 }
 /* BANNER2 */
 .banner-2 {
-    padding: 48PX 64PX;
-    margin: 0 40px;
+    padding: 6rem 2.25rem 3rem;
     background: linear-gradient(to right,#8f33c4 , #d52a78 , #f4662a);
+    border-radius: 1.5rem;
 }
 .banner-2 h6{
-    margin-inline-end: 40px;
-    font-size: 1.4rem;
+   
+    font-size: 1rem;
     line-height: 1.9rem;
     word-spacing: -3px;
-    
+    margin: 0 0 20px 0;
 }
 .banner-2 >a{
     padding: 12px 20px;
     color: rgba(164,43,180,1);
-    font-size: .8375rem;
+    font-size: 8px;
     line-height: 1rem;
 }
 .banner-2 > img{
-    right: 0;
-    top: -5rem;
-    /* transform: scale(1,1); */
+    right: 50%;
+    top: -6rem;
+    transform: translateX(50%)
+    scale(.75);
+    
 }
 
 

@@ -8,21 +8,26 @@
     <title>آموزش برنامه نویسی-راکت</title>
     <link rel="icon" type="image" href="#">
     <meta name="description" contenet="هر چیزی که مربوط هست">
-    <link rel="stylesheet" href=".//lib/bootstrap/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href=".//css/media.css">
-    <link rel="stylesheet" href=".//css/main-style.css">
-    <link rel="stylesheet" href=".//lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href=".//lib/OwlCarousel2/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.theme.default.css">
 </head>
 
 <body>
     <header class="pt-3">
-        <div class="container container-xl ">
+        <div class="container-xl ">
             <!--STATIC top HEADER  -->
             <div class="top-header py-sm-9 px-sm-11 bg-white d-flex align-items-center justify-content-between ">
-                <div>
-                    <a class="#" href="#">
-                        <svg class="md:w-52 sm:w-40 w-24 sm:inline-block dark:hidden hidden" width="220" version="1.1"
+                <div class="ham-menu d-lg-none" >
+                     <svg width="24" class="text-biscay-700 dark:text-white" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 2.5H21.5M2 9H21.5M2 15.5H21.5" stroke="currentColor" stroke-width="3.65625" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>          
+                </div>
+                <div class="logo">
+                    <a class="" href="#">
+                        <svg class="d-none d-sm-block" width="220" version="1.1"
                             id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             x="0px" y="0px" viewBox="0 0 578 128" style="enable-background: new 0 0 578 128"
                             xml:space="preserve">
@@ -75,9 +80,13 @@
                                 </g>
                             </g>
                         </svg>
+                        <svg class="d-sm-none" width="29" height="43" viewBox="0 0 29 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0969 42.9998L8.96094 35.4553L14.0969 30.3193L19.2682 35.4553L14.0969 42.9998Z" fill="#FF9900"></path>
+                            <path d="M28.3362 14.3098V31.3115L21.2521 25.963C21.2521 25.963 22.0314 19.3394 22.1731 14.3098C22.2439 11.8304 19.9062 9.70514 14.1681 6.87152C8.39459 9.74056 6.09228 11.8304 6.16312 14.3098C6.3048 19.3394 7.08404 25.963 7.08404 25.963L0 31.3115V14.3098C0 11.299 1.27513 8.57169 3.78996 6.23396C5.56097 4.56921 8.00497 3.04614 11.6887 1.23971L14.1681 0L16.6475 1.23971C20.3312 3.04614 22.7752 4.60463 24.5462 6.23396C27.061 8.57169 28.3362 11.299 28.3362 14.3098Z" fill="#FF3333"></path>
+                        </svg>
                     </a>
                 </div>
-                <form class="position-relative w-50 d-flex align-items-center mx-auto" action="">
+                <form class="d-none d-lg-block position-relative  w-50 d-flex align-items-center mx-auto" action="">
                     <input class="rounded-4 w-100" type="text" placeholder="دنبال چی میگردی؟">
                     <button class="position-absolute btn ">
                         <svg class="" width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -89,7 +98,7 @@
                         </svg>
                     </button>
                 </form>
-                <div class="dark-mode ">
+                <div class="dark-mode d-none d-lg-block">
                     <div>
                         <button class="btn d-flex align-items-center rounded-circle me-3">
                             <svg class=" text-biscay-700 dark:text-gray-900 dark:group-hover:text-dark-920 group-hover:text-biscay-300"
@@ -101,6 +110,7 @@
                         </button>
                     </div>
                 </div>
+                
                 <div class="login-sign-up d-flex rounded-3 ">
                     <div class="login rounded-3">
                         <a class="d-flex align-items-center fs-6" href="/signin.html">
@@ -136,7 +146,7 @@
                 </div>
             </div>
             <!-- DYNAMNIC bottom HEADER -->
-            <div class="bottom-header rounded-bottom-4  navbar navbar-expand ">
+            <div class="bottom-header rounded-bottom-4  navbar navbar-expand d-none d-lg-block ">
                 <div class="container-fluid justify-content-center">
                     <ul class="navbar-nav ">
                         <li class="nav-item"><a class="nav-link" href="">راکت</a></li>
@@ -278,7 +288,7 @@
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" data-bs-toggle="dropdown"
                                     data-bs-offset="10,20">لینک های مفید</button>
-                                <div class="dropdown-menu position-absolute z-3 m-0 border-0 shadow ">
+                                <div class="dropdown-menu  z-3 m-0 border-0 shadow ">
                                     <div><a class="dropdown-item rounded-1 " href="#">کانال تلگرام</a></div>
                                     <div><a class="dropdown-item rounded-1 " href="#">سوالات متداول</a></div>
                                     <div><a class="dropdown-item rounded-1 " href="#">درباره ما</a></div>
@@ -843,11 +853,13 @@
                 <!--body: 4 boxes container-->
                 <div class="row ">
                     <!-- BOX1/4 -->
-                    <div class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
+                    <div
+                        class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
                         <!-- IMAGE TITLE -->
                         <div class="position-absolute ">
                             <a class="d-block w-100 rounded overflow-hidden" href="#">
-                                <img class="h-100 w-100" src=".//image/THDjo4ZFchqxtbIyXcKvoQxZXMFh9nHRnzNzHgtm.png" alt="">
+                                <img class="h-100 w-100" src=".//image/THDjo4ZFchqxtbIyXcKvoQxZXMFh9nHRnzNzHgtm.png"
+                                    alt="">
                             </a>
                         </div>
                         <!-- main-->
@@ -931,11 +943,12 @@
                         </div>
                     </div>
                     <!-- box2/4 -->
-                    <div class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
+                    <div
+                        class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
                         <!-- IMAGE TITLE -->
                         <div class="position-absolute "><a class="d-inline-block w-100 rounded overflow-hidden"
-                                href="#"><img class="h-100 w-100" src=".//image/ERXQS7GHCGaTmzxa4x2Aa5upnKJ9lzPhjIt4FXnb.png"
-                                    alt=""></a></div>
+                                href="#"><img class="h-100 w-100"
+                                    src=".//image/ERXQS7GHCGaTmzxa4x2Aa5upnKJ9lzPhjIt4FXnb.png" alt=""></a></div>
                         <!-- main-->
                         <div class="body px-3 pb-1 flex-grow-1 d-flex flex-column">
                             <!-- part1 soon -->
@@ -1016,11 +1029,12 @@
                         </div>
                     </div>
                     <!-- box3/4 -->
-                    <div class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
+                    <div
+                        class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
                         <!-- IMAGE TITLE -->
                         <div class="position-absolute "><a class="d-inline-block w-100 rounded overflow-hidden"
-                                href="#"><img class="h-100 w-100" src=".//image/U0QH4ibvXsZv2m02ZCBJiVFVUjszsgGvniuDTfcj.png"
-                                    alt=""></a></div>
+                                href="#"><img class="h-100 w-100"
+                                    src=".//image/U0QH4ibvXsZv2m02ZCBJiVFVUjszsgGvniuDTfcj.png" alt=""></a></div>
                         <!-- main-->
                         <div class="body px-3 pb-1 flex-grow-1 d-flex flex-column">
                             <!-- part1 soon -->
@@ -1092,82 +1106,83 @@
                         </div>
                     </div>
                     <!-- box4/4 -->
-                    <div class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
+                    <div
+                        class="box-container d-flex flex-column px-0 col bg-white me-4 position-relative shadow rounded-3">
                         <!-- IMAGE TITLE -->
                         <div class="position-absolute "><a class="d-inline-block w-100 rounded overflow-hidden"
-                                href="#"><img class="h-100 w-100" src=".//image/ioDeXafEDhecZJU2vhCqzBqKw1rSt2VjZmy2BxVm.png"
-                                    alt=""></a></div>
+                                href="#"><img class="h-100 w-100"
+                                    src=".//image/ioDeXafEDhecZJU2vhCqzBqKw1rSt2VjZmy2BxVm.png" alt=""></a></div>
                         <!-- main-->
-                        
-                            <div class="body px-3 flex-grow-1 d-flex flex-column pb-1">
-                                <!-- part1 soon -->
-                                <div class="">
-                                    <span class="fw-semibold blue-color d-inline-flex align-items-center mb-2 ">
-                                        <svg class="me-1" width="7" height="7" viewBox="0 0 7 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="3.57789" cy="3.28785" r="2.74867" fill="currentColor"></circle>
-                                        </svg>
-                                        تکمیل ضبط
-                                    </span>
-                                </div>
-                                <!-- part2 -->
-                                <div class="flex-grow-1 ">
-                                    <a class="mb-2  text-decoration-none" href="#">
-                                        <span class="fw-bold fs-5">آشنایی با امکانات جدید لاراول 10</span>
-                                    </a>
-                                    <p class="lh-base fw-normal mb-2 ">
-                                        در لاراول ۱۰ تغییرات جدیدی ارائه شده که ما در دوره آشنایی با امکانات لاراول ۱۰ سعی
-                                        داریم شما را با این امکانات جدید به شکل کامل آشنا کنیم.
-                                    </p>
-                                </div>
-                                <!-- part3-free price -->
-                                <div class="free-price d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-content-center">
-                                        <span class="me-2 px-2 rounded-1 d-flex align-items-center">
-                                            <svg class=" me-1" width="15" height="14" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M0.364577 8C0.364577 9.63868 0.452857 10.9306 0.679456 11.9502C0.905136 12.9657 1.26314 13.6885 1.78729 14.2127C2.31145 14.7369 3.03431 15.0949 4.04978 15.3205C5.06939 15.5471 6.36132 15.6354 8 15.6354C9.63868 15.6354 10.9306 15.5471 11.9502 15.3205C12.9657 15.0949 13.6885 14.7369 14.2127 14.2127C14.7369 13.6885 15.0949 12.9657 15.3205 11.9502C15.5471 10.9306 15.6354 9.63868 15.6354 8C15.6354 6.36132 15.5471 5.06939 15.3205 4.04978C15.0949 3.03432 14.7369 2.31145 14.2127 1.7873C13.6885 1.26314 12.9657 0.905137 11.9502 0.679458C10.9306 0.452858 9.63868 0.364578 8 0.364578C6.36132 0.364578 5.06939 0.452858 4.04978 0.679458C3.03431 0.905137 2.31145 1.26314 1.78729 1.7873C1.26314 2.31145 0.905136 3.03432 0.679456 4.04978C0.452857 5.06939 0.364577 6.36132 0.364577 8Z"
-                                                    stroke="currentColor" stroke-width="0.729154" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                                <path
-                                                    d="M8 4C8 4 8 6.66667 8 7.33333C8 8 7.99999 8 8.66667 8C9.33334 8 12 8 12 8"
-                                                    stroke="currentColor" stroke-width="0.729154" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                            </svg>
-                                            05:00:42
-                                        </span>
-                                        <button class=" btn me-2 px-2 rounded-1 d-flex align-items-center border-0">
-                                            <svg class="me-1" width="12" height="12" fill="none" viewBox="0 0 13 11"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    class="stroke-current transition duration-200 text-red-450 group-hover:text-white"
-                                                    d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
-                                                    stroke="#E81C4D" stroke-width="0.761705"></path>
-                                            </svg>
-                                            77
-                                        </button>
-                                    </div>
-                                    <div class=" "><span class="fw-bold">رایگان :) </span></div>
-                                </div>
-                            </div>
-                            <!-- FOOTER  -->
-                            <div class="justify-content-center d-flex align-items-center border-top">
-                                <a class="d-flex blue-footer align-items-center my-3 text-decoration-none fs-6 fw-bold"
-                                    href="#">
-                                    مشاهده اطلاعات دوره
-                                    <svg class="ms-1 " width="26" height="25" viewBox="0 0 26 25" fill="none"
+
+                        <div class="body px-3 flex-grow-1 d-flex flex-column pb-1">
+                            <!-- part1 soon -->
+                            <div class="">
+                                <span class="fw-semibold blue-color d-inline-flex align-items-center mb-2 ">
+                                    <svg class="me-1" width="7" height="7" viewBox="0 0 7 7" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="currentColor" opacity="0.4"
-                                            d="M16.7544 11.5347L20.5098 11.2026C21.3525 11.2026 22.0358 11.8925 22.0358 12.7435C22.0358 13.5945 21.3525 14.2844 20.5098 14.2844L16.7544 13.9523C16.0933 13.9523 15.5573 13.4111 15.5573 12.7435C15.5573 12.0748 16.0933 11.5347 16.7544 11.5347Z">
-                                        </path>
-                                        <path fill="currentColor"
-                                            d="M4.14372 11.5957C4.20242 11.5365 4.42169 11.286 4.62767 11.078C5.82925 9.77526 8.96663 7.64503 10.6079 6.9931C10.857 6.8891 11.4872 6.66769 11.8249 6.65204C12.1472 6.65204 12.4551 6.72696 12.7485 6.87457C13.1151 7.08144 13.4075 7.40796 13.5692 7.79263C13.6722 8.05877 13.8338 8.85831 13.8338 8.87285C13.9944 9.74619 14.0819 11.1663 14.0819 12.7363C14.0819 14.2303 13.9944 15.5923 13.8626 16.4802C13.8482 16.4958 13.6866 17.4877 13.5105 17.8276C13.1882 18.4494 12.5581 18.8341 11.8836 18.8341H11.8249C11.3853 18.8195 10.4617 18.4337 10.4617 18.4203C8.90794 17.7684 5.84475 15.741 4.61328 14.3936C4.61328 14.3936 4.26554 14.0469 4.11493 13.8311C3.88015 13.5202 3.76276 13.1355 3.76276 12.7509C3.76276 12.3215 3.89455 11.9223 4.14372 11.5957Z">
-                                        </path>
+                                        <circle cx="3.57789" cy="3.28785" r="2.74867" fill="currentColor"></circle>
                                     </svg>
-                                </a>
+                                    تکمیل ضبط
+                                </span>
                             </div>
-                        
+                            <!-- part2 -->
+                            <div class="flex-grow-1 ">
+                                <a class="mb-2  text-decoration-none" href="#">
+                                    <span class="fw-bold fs-5">آشنایی با امکانات جدید لاراول 10</span>
+                                </a>
+                                <p class="lh-base fw-normal mb-2 ">
+                                    در لاراول ۱۰ تغییرات جدیدی ارائه شده که ما در دوره آشنایی با امکانات لاراول ۱۰ سعی
+                                    داریم شما را با این امکانات جدید به شکل کامل آشنا کنیم.
+                                </p>
+                            </div>
+                            <!-- part3-free price -->
+                            <div class="free-price d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-content-center">
+                                    <span class="me-2 px-2 rounded-1 d-flex align-items-center">
+                                        <svg class=" me-1" width="15" height="14" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.364577 8C0.364577 9.63868 0.452857 10.9306 0.679456 11.9502C0.905136 12.9657 1.26314 13.6885 1.78729 14.2127C2.31145 14.7369 3.03431 15.0949 4.04978 15.3205C5.06939 15.5471 6.36132 15.6354 8 15.6354C9.63868 15.6354 10.9306 15.5471 11.9502 15.3205C12.9657 15.0949 13.6885 14.7369 14.2127 14.2127C14.7369 13.6885 15.0949 12.9657 15.3205 11.9502C15.5471 10.9306 15.6354 9.63868 15.6354 8C15.6354 6.36132 15.5471 5.06939 15.3205 4.04978C15.0949 3.03432 14.7369 2.31145 14.2127 1.7873C13.6885 1.26314 12.9657 0.905137 11.9502 0.679458C10.9306 0.452858 9.63868 0.364578 8 0.364578C6.36132 0.364578 5.06939 0.452858 4.04978 0.679458C3.03431 0.905137 2.31145 1.26314 1.78729 1.7873C1.26314 2.31145 0.905136 3.03432 0.679456 4.04978C0.452857 5.06939 0.364577 6.36132 0.364577 8Z"
+                                                stroke="currentColor" stroke-width="0.729154" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M8 4C8 4 8 6.66667 8 7.33333C8 8 7.99999 8 8.66667 8C9.33334 8 12 8 12 8"
+                                                stroke="currentColor" stroke-width="0.729154" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                        05:00:42
+                                    </span>
+                                    <button class=" btn me-2 px-2 rounded-1 d-flex align-items-center border-0">
+                                        <svg class="me-1" width="12" height="12" fill="none" viewBox="0 0 13 11"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                class="stroke-current transition duration-200 text-red-450 group-hover:text-white"
+                                                d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
+                                                stroke="#E81C4D" stroke-width="0.761705"></path>
+                                        </svg>
+                                        77
+                                    </button>
+                                </div>
+                                <div class=" "><span class="fw-bold">رایگان :) </span></div>
+                            </div>
+                        </div>
+                        <!-- FOOTER  -->
+                        <div class="justify-content-center d-flex align-items-center border-top">
+                            <a class="d-flex blue-footer align-items-center my-3 text-decoration-none fs-6 fw-bold"
+                                href="#">
+                                مشاهده اطلاعات دوره
+                                <svg class="ms-1 " width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" opacity="0.4"
+                                        d="M16.7544 11.5347L20.5098 11.2026C21.3525 11.2026 22.0358 11.8925 22.0358 12.7435C22.0358 13.5945 21.3525 14.2844 20.5098 14.2844L16.7544 13.9523C16.0933 13.9523 15.5573 13.4111 15.5573 12.7435C15.5573 12.0748 16.0933 11.5347 16.7544 11.5347Z">
+                                    </path>
+                                    <path fill="currentColor"
+                                        d="M4.14372 11.5957C4.20242 11.5365 4.42169 11.286 4.62767 11.078C5.82925 9.77526 8.96663 7.64503 10.6079 6.9931C10.857 6.8891 11.4872 6.66769 11.8249 6.65204C12.1472 6.65204 12.4551 6.72696 12.7485 6.87457C13.1151 7.08144 13.4075 7.40796 13.5692 7.79263C13.6722 8.05877 13.8338 8.85831 13.8338 8.87285C13.9944 9.74619 14.0819 11.1663 14.0819 12.7363C14.0819 14.2303 13.9944 15.5923 13.8626 16.4802C13.8482 16.4958 13.6866 17.4877 13.5105 17.8276C13.1882 18.4494 12.5581 18.8341 11.8836 18.8341H11.8249C11.3853 18.8195 10.4617 18.4337 10.4617 18.4203C8.90794 17.7684 5.84475 15.741 4.61328 14.3936C4.61328 14.3936 4.26554 14.0469 4.11493 13.8311C3.88015 13.5202 3.76276 13.1355 3.76276 12.7509C3.76276 12.3215 3.89455 11.9223 4.14372 11.5957Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+
                     </div>
 
 
@@ -2209,498 +2224,515 @@
         </section>
         <section class="about-roocket slider-2 py-24"></section>
         <section class="news mt-md-52">
-            <div class="container">
-                <!-- FIX BOX -->
-                <div class="row mx-0 col-lg-12 rounded-4 position-relative">
-                    <div class="col-lg-12 text-center text-xl-center">
-                        <h4 class="mb-3 fw-bolder">
-                            از گوشه و اطراف
-                            دنیای برنامه‌نویسی
-                        </h4>
-                        <p class="fs-6 mb-3 overflow-hidden">
-                            نوشتن کار جالبیه که از
-                            هزاران سال همراه ما بوده و کمک کرده تا همیشه به روز باشیم، ما در راکت فضای رو به شکلی آماده
-                            کردیم تا شما بتونید ایده‌ها و مطالب جالب حوزه برنامه‌نویسی رو در اختیار هزاران برنامه‌نویس
-                            عضو
-                            راکت قرار بدید.
-                        </p>
-                        <div>
-                            <a class="btn btn-primary fw-bold rounded-1 me-3 d-inline-flex align-items-center" href="#">
-                                مشاهده همه مطالب
-                                <svg class="ms-1" width="18" height="14" viewBox="0 0 25 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="currentColor" opacity="0.4"
-                                        d="M16.0371 11.2149L19.7925 10.8828C20.6352 10.8828 21.3185 11.5727 21.3185 12.4237C21.3185 13.2746 20.6352 13.9646 19.7925 13.9646L16.0371 13.6325C15.376 13.6325 14.84 13.0913 14.84 12.4237C14.84 11.755 15.376 11.2149 16.0371 11.2149Z">
-                                    </path>
-                                    <path fill="currentColor"
-                                        d="M3.42647 11.2759C3.48516 11.2166 3.70443 10.9662 3.91042 10.7582C5.11199 9.45544 8.24938 7.3252 9.89061 6.67327C10.1398 6.56928 10.7699 6.34787 11.1077 6.33221C11.43 6.33221 11.7378 6.40714 12.0313 6.55474C12.3979 6.76162 12.6902 7.08814 12.8519 7.47281C12.9549 7.73895 13.1166 8.53849 13.1166 8.55302C13.2772 9.42636 13.3647 10.8465 13.3647 12.4165C13.3647 13.9105 13.2772 15.2725 13.1454 16.1604C13.131 16.176 12.9693 17.1679 12.7932 17.5078C12.4709 18.1296 11.8408 18.5142 11.1664 18.5142H11.1077C10.668 18.4997 9.74443 18.1139 9.74443 18.1005C8.19068 17.4486 5.1275 15.4212 3.89602 14.0737C3.89602 14.0737 3.54829 13.7271 3.39767 13.5113C3.1629 13.2004 3.04551 12.8157 3.04551 12.431C3.04551 12.0016 3.17729 11.6024 3.42647 11.2759Z">
-                                    </path>
-                                </svg>
-                            </a>
+            <div class="container position-relative ">
+                
+                    <!-- FIX BOX -->
+                    <div class=" mx-0 rounded-4">
+                        <div class="col-12 col-xl-5 text-center text-xl-center">
+                            <h4 class="mb-3 fw-bolder">
+                                از گوشه و اطراف
+                                دنیای برنامه‌نویسی
+                            </h4>
+                            <p class="fs-6 mb-3 overflow-hidden text-xl-start">
+                                نوشتن کار جالبیه که از
+                                هزاران سال همراه ما بوده و کمک کرده تا همیشه به روز باشیم، ما در راکت فضای رو به شکلی
+                                آماده
+                                کردیم تا شما بتونید ایده‌ها و مطالب جالب حوزه برنامه‌نویسی رو در اختیار هزاران
+                                برنامه‌نویس
+                                عضو
+                                راکت قرار بدید.
+                            </p>
+                            <div>
+                                <a class="btn btn-primary fw-bold rounded-1 me-3 d-inline-flex align-items-center"
+                                    href="#">
+                                    مشاهده همه مطالب
+                                    <svg class="ms-1" width="18" height="14" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor" opacity="0.4"
+                                            d="M16.0371 11.2149L19.7925 10.8828C20.6352 10.8828 21.3185 11.5727 21.3185 12.4237C21.3185 13.2746 20.6352 13.9646 19.7925 13.9646L16.0371 13.6325C15.376 13.6325 14.84 13.0913 14.84 12.4237C14.84 11.755 15.376 11.2149 16.0371 11.2149Z">
+                                        </path>
+                                        <path fill="currentColor"
+                                            d="M3.42647 11.2759C3.48516 11.2166 3.70443 10.9662 3.91042 10.7582C5.11199 9.45544 8.24938 7.3252 9.89061 6.67327C10.1398 6.56928 10.7699 6.34787 11.1077 6.33221C11.43 6.33221 11.7378 6.40714 12.0313 6.55474C12.3979 6.76162 12.6902 7.08814 12.8519 7.47281C12.9549 7.73895 13.1166 8.53849 13.1166 8.55302C13.2772 9.42636 13.3647 10.8465 13.3647 12.4165C13.3647 13.9105 13.2772 15.2725 13.1454 16.1604C13.131 16.176 12.9693 17.1679 12.7932 17.5078C12.4709 18.1296 11.8408 18.5142 11.1664 18.5142H11.1077C10.668 18.4997 9.74443 18.1139 9.74443 18.1005C8.19068 17.4486 5.1275 15.4212 3.89602 14.0737C3.89602 14.0737 3.54829 13.7271 3.39767 13.5113C3.1629 13.2004 3.04551 12.8157 3.04551 12.431C3.04551 12.0016 3.17729 11.6024 3.42647 11.2759Z">
+                                        </path>
+                                    </svg>
+                                </a>
 
+                            </div>
+                            <svg class="position-absolute" width="49" height="46" viewBox="0 0 49 46" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.2432" cy="32.1084" r="13.2432" fill="#DC2626"></circle>
+                                <circle cx="39.7298" cy="17.5407" r="9.27027" fill="#DC2626" fill-opacity="0.4">
+                                </circle>
+                                <circle cx="19.865" cy="5.62176" r="5.2973" fill="#DC2626" fill-opacity="0.7"></circle>
+                            </svg>
                         </div>
-                        <svg class="position-absolute" width="49" height="46" viewBox="0 0 49 46" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="13.2432" cy="32.1084" r="13.2432" fill="#DC2626"></circle>
-                            <circle cx="39.7298" cy="17.5407" r="9.27027" fill="#DC2626" fill-opacity="0.4"></circle>
-                            <circle cx="19.865" cy="5.62176" r="5.2973" fill="#DC2626" fill-opacity="0.7"></circle>
-                        </svg>
                     </div>
-                </div>
-                <!-- 4 boxes nthchild(2)-->
-                <div class=" row mx-0 col-lg-12 col-xl-6  ">
-                    <div class="col-6">
-                        <div class="bg-white shadow-sm rounded p-3 mb-4 ">
-                            <!--P1 IMG -->
-                            <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100
+                    <!-- 4 boxes nthchild(2)-->
+                    <div class=" row col-12 col-xl-7 absolute-lg place-lg  mx-0 ">
+                        <div class="col-sm-6">
+                            <div class="bg-white shadow-sm rounded p-3 mb-4 ">
+                                <!--P1 IMG -->
+                                <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100
                                 " src=".//image/vYXXnKBvjILBhat99EUWFxPKXwY3JdDAZWUOfXQL.png" alt="">
-                            </a>
-                            <!-- p2 body -->
-                            <div>
-                                <!-- 2/1 TITLE -->
+                                </a>
+                                <!-- p2 body -->
                                 <div>
-                                    <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
-                                            href="#">مقایسه Flask و Express.js</a></h4>
-                                </div>
-                                <!-- 2/2 -->
-                                <div>
-                                    <!-- .name ARASTU2.1 -->
-                                    <div class="name mb-1 d-flex justify-content-between">
-                                        <div class="d-flex align-content-center">
-                                            <img class="me-1 rounded-circle"
-                                                src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
-                                            <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a></h6>
+                                    <!-- 2/1 TITLE -->
+                                    <div>
+                                        <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
+                                                href="#">مقایسه Flask و Express.js</a></h4>
+                                    </div>
+                                    <!-- 2/2 -->
+                                    <div>
+                                        <!-- .name ARASTU2.1 -->
+                                        <div class="name mb-1 d-flex justify-content-between">
+                                            <div class="d-flex align-content-center">
+                                                <img class="me-1 rounded-circle"
+                                                    src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
+                                                <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a>
+                                                </h6>
+                                            </div>
+                                            <div>
+                                                <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
+                                                    href="#">
+                                                    <svg class="me-1" width="15" height="10" viewBox="0 0 10 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
+                                                        </path>
+                                                        <path
+                                                            class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
+                                                            stroke-width="0.833333" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    توسعه وب
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
-                                                href="#">
-                                                <svg class="me-1" width="15" height="10" viewBox="0 0 10 10" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
-                                                    </path>
-                                                    <path
-                                                        class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
-                                                        stroke-width="0.833333" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                توسعه وب
-                                            </a>
+                                        <!-- footer2.2 -->
+                                        <div class="footer-box d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
+                                                    <svg class="me-1" width="12" height="12" viewBox="0 0 12 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
+                                                            stroke="#607496" stroke-width="0.960719"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.47668 4.67017H8.39812" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M3.59465 6.5918H8.39825" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    0
+                                                </a>
+                                                <button class="btn rounded-1 d-flex align-items-center me-2">
+                                                    <svg class="me-1 -mt-0.5" fill="none" height="11"
+                                                        viewBox="0 0 13 11" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
+                                                            d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
+                                                            stroke="#E81C4D" stroke-width="0.761705"></path>
+                                                    </svg>
+                                                    0
+                                                </button>
+                                                <button class="btn rounded-1 d-flex align-items-center">
+                                                    <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="">
+                                                <span class="d-flex align-items-center">
+                                                    <svg class="me-1" width="10" height="12" viewBox="0 0 10 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
+                                                            stroke="currentColor" stroke-width="0.923077"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    زمان مطالعه: 8 دقیقه
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- footer2.2 -->
-                                    <div class="footer-box d-flex justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
-                                                <svg class="me-1" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
-                                                        stroke="#607496" stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M6.47668 4.67017H8.39812" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M3.59465 6.5918H8.39825" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                0
-                                            </a>
-                                            <button class="btn rounded-1 d-flex align-items-center me-2">
-                                                <svg class="me-1 -mt-0.5" fill="none" height="11" viewBox="0 0 13 11"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
-                                                        d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
-                                                        stroke="#E81C4D" stroke-width="0.761705"></path>
-                                                </svg>
-                                                0
-                                            </button>
-                                            <button class="btn rounded-1 d-flex align-items-center">
-                                                <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </button>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-sm rounded p-3 mb-4 ">
+                                <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100"
+                                        src=".//image/Q4JFmOi5nkL1L55GoJPOyqamsJD8vpJ4et1NfKAR.png" alt="">
+                                </a>
+                                <!-- p2 body -->
+                                <div>
+                                    <!-- 2/1 TITLE -->
+                                    <div>
+                                        <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
+                                                href="#">مقایسه Flask و Express.js</a></h4>
+                                    </div>
+                                    <!-- 2/2 -->
+                                    <div>
+                                        <!-- .name ARASTU2.1 -->
+                                        <div class="name mb-1 d-flex justify-content-between">
+                                            <div class="d-flex align-content-center">
+                                                <img class="me-1 rounded-circle"
+                                                    src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
+                                                <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a>
+                                                </h6>
+                                            </div>
+                                            <div>
+                                                <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
+                                                    href="#">
+                                                    <svg class="me-1" width="15" height="10" viewBox="0 0 10 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
+                                                        </path>
+                                                        <path
+                                                            class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
+                                                            stroke-width="0.833333" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    توسعه وب
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="">
-                                            <span class="d-flex align-items-center">
-                                                <svg class="me-1" width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
-                                                        fill="currentColor"></path>
-                                                    <path
-                                                        d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
-                                                        stroke="currentColor" stroke-width="0.923077"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                زمان مطالعه: 8 دقیقه
-                                            </span>
+                                        <!-- footer2.2 -->
+                                        <div class="footer-box d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
+                                                    <svg class="me-1" width="12" height="12" viewBox="0 0 12 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
+                                                            stroke="#607496" stroke-width="0.960719"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.47668 4.67017H8.39812" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M3.59465 6.5918H8.39825" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    0
+                                                </a>
+                                                <button class="btn rounded-1 d-flex align-items-center me-2">
+                                                    <svg class="me-1 -mt-0.5" fill="none" height="11"
+                                                        viewBox="0 0 13 11" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
+                                                            d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
+                                                            stroke="#E81C4D" stroke-width="0.761705"></path>
+                                                    </svg>
+                                                    0
+                                                </button>
+                                                <button class="btn rounded-1 d-flex align-items-center">
+                                                    <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="">
+                                                <span class="d-flex align-items-center">
+                                                    <svg class="me-1" width="10" height="12" viewBox="0 0 10 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
+                                                            stroke="currentColor" stroke-width="0.923077"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    زمان مطالعه: 8 دقیقه
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="bg-white shadow-sm rounded p-3 mb-4 ">
-                            <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100"
-                                    src=".//image/Q4JFmOi5nkL1L55GoJPOyqamsJD8vpJ4et1NfKAR.png" alt="">
-                            </a>
-                            <!-- p2 body -->
-                            <div>
-                                <!-- 2/1 TITLE -->
+                        <div class="col-sm-6 mt-xl-5">
+                            <div class="bg-white shadow-sm rounded p-3 mb-4">
+                                <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100"
+                                        src=".//image/hXg0cdfl2faxHSsmh0JLMC1PFLHnR4fZ1RlcK6CS.png" alt="">
+                                </a>
+                                <!-- p2 body -->
                                 <div>
-                                    <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
-                                            href="#">مقایسه Flask و Express.js</a></h4>
-                                </div>
-                                <!-- 2/2 -->
-                                <div>
-                                    <!-- .name ARASTU2.1 -->
-                                    <div class="name mb-1 d-flex justify-content-between">
-                                        <div class="d-flex align-content-center">
-                                            <img class="me-1 rounded-circle"
-                                                src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
-                                            <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a></h6>
+                                    <!-- 2/1 TITLE -->
+                                    <div>
+                                        <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
+                                                href="#">مقایسه Flask و Express.js</a></h4>
+                                    </div>
+                                    <!-- 2/2 -->
+                                    <div>
+                                        <!-- .name ARASTU2.1 -->
+                                        <div class="name mb-1 d-flex justify-content-between">
+                                            <div class="d-flex align-content-center">
+                                                <img class="me-1 rounded-circle"
+                                                    src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
+                                                <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a>
+                                                </h6>
+                                            </div>
+                                            <div>
+                                                <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
+                                                    href="#">
+                                                    <svg class="me-1" width="15" height="10" viewBox="0 0 10 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
+                                                        </path>
+                                                        <path
+                                                            class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
+                                                            stroke-width="0.833333" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    توسعه وب
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
-                                                href="#">
-                                                <svg class="me-1" width="15" height="10" viewBox="0 0 10 10" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
-                                                    </path>
-                                                    <path
-                                                        class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
-                                                        stroke-width="0.833333" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                توسعه وب
-                                            </a>
+                                        <!-- footer2.2 -->
+                                        <div class="footer-box d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
+                                                    <svg class="me-1" width="12" height="12" viewBox="0 0 12 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
+                                                            stroke="#607496" stroke-width="0.960719"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.47668 4.67017H8.39812" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M3.59465 6.5918H8.39825" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    0
+                                                </a>
+                                                <button class="btn rounded-1 d-flex align-items-center me-2">
+                                                    <svg class="me-1 -mt-0.5" fill="none" height="11"
+                                                        viewBox="0 0 13 11" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
+                                                            d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
+                                                            stroke="#E81C4D" stroke-width="0.761705"></path>
+                                                    </svg>
+                                                    0
+                                                </button>
+                                                <button class="btn rounded-1 d-flex align-items-center">
+                                                    <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="">
+                                                <span class="d-flex align-items-center">
+                                                    <svg class="me-1" width="10" height="12" viewBox="0 0 10 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
+                                                            stroke="currentColor" stroke-width="0.923077"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    زمان مطالعه: 8 دقیقه
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- footer2.2 -->
-                                    <div class="footer-box d-flex justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
-                                                <svg class="me-1" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
-                                                        stroke="#607496" stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M6.47668 4.67017H8.39812" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M3.59465 6.5918H8.39825" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                0
-                                            </a>
-                                            <button class="btn rounded-1 d-flex align-items-center me-2">
-                                                <svg class="me-1 -mt-0.5" fill="none" height="11" viewBox="0 0 13 11"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
-                                                        d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
-                                                        stroke="#E81C4D" stroke-width="0.761705"></path>
-                                                </svg>
-                                                0
-                                            </button>
-                                            <button class="btn rounded-1 d-flex align-items-center">
-                                                <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </button>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-sm rounded p-3 mb-4">
+                                <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100"
+                                        src=".//image/JcOBE9QCPcdAsyHqhKaApQEKUIf0bYEE2GYyvvXl.jpg" alt="">
+                                </a>
+                                <!-- p2 body -->
+                                <div>
+                                    <!-- 2/1 TITLE -->
+                                    <div>
+                                        <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
+                                                href="#">مقایسه Flask و Express.js</a></h4>
+                                    </div>
+                                    <!-- 2/2 -->
+                                    <div>
+                                        <!-- .name ARASTU2.1 -->
+                                        <div class="name mb-1 d-flex justify-content-between">
+                                            <div class="d-flex align-content-center">
+                                                <img class="me-1 rounded-circle"
+                                                    src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
+                                                <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a>
+                                                </h6>
+                                            </div>
+                                            <div>
+                                                <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
+                                                    href="#">
+                                                    <svg class="me-1" width="15" height="10" viewBox="0 0 10 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
+                                                        </path>
+                                                        <path
+                                                            class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
+                                                            d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
+                                                            stroke-width="0.833333" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    توسعه وب
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="">
-                                            <span class="d-flex align-items-center">
-                                                <svg class="me-1" width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
-                                                        fill="currentColor"></path>
-                                                    <path
-                                                        d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
-                                                        stroke="currentColor" stroke-width="0.923077"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                زمان مطالعه: 8 دقیقه
-                                            </span>
+                                        <!-- footer2.2 -->
+                                        <div class="footer-box d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
+                                                    <svg class="me-1" width="12" height="12" viewBox="0 0 12 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
+                                                            stroke="#607496" stroke-width="0.960719"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.47668 4.67017H8.39812" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M3.59465 6.5918H8.39825" stroke="#607496"
+                                                            stroke-width="0.960719" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    0
+                                                </a>
+                                                <button class="btn rounded-1 d-flex align-items-center me-2">
+                                                    <svg class="me-1 -mt-0.5" fill="none" height="11"
+                                                        viewBox="0 0 13 11" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
+                                                            d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
+                                                            stroke="#E81C4D" stroke-width="0.761705"></path>
+                                                    </svg>
+                                                    0
+                                                </button>
+                                                <button class="btn rounded-1 d-flex align-items-center">
+                                                    <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            class="stroke-current text-blue-700 group-hover:text-white"
+                                                            d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
+                                                            stroke-width="0.86" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="">
+                                                <span class="d-flex align-items-center">
+                                                    <svg class="me-1" width="10" height="12" viewBox="0 0 10 12"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
+                                                            stroke="currentColor" stroke-width="0.923077"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    زمان مطالعه: 8 دقیقه
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <div class="col-6">
-                        <div class="bg-white shadow-sm rounded p-3 mb-4">
-                            <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100"
-                                    src=".//image/hXg0cdfl2faxHSsmh0JLMC1PFLHnR4fZ1RlcK6CS.png" alt="">
-                            </a>
-                            <!-- p2 body -->
-                            <div>
-                                <!-- 2/1 TITLE -->
-                                <div>
-                                    <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
-                                            href="#">مقایسه Flask و Express.js</a></h4>
-                                </div>
-                                <!-- 2/2 -->
-                                <div>
-                                    <!-- .name ARASTU2.1 -->
-                                    <div class="name mb-1 d-flex justify-content-between">
-                                        <div class="d-flex align-content-center">
-                                            <img class="me-1 rounded-circle"
-                                                src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
-                                            <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a></h6>
-                                        </div>
-                                        <div>
-                                            <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
-                                                href="#">
-                                                <svg class="me-1" width="15" height="10" viewBox="0 0 10 10" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
-                                                    </path>
-                                                    <path
-                                                        class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
-                                                        stroke-width="0.833333" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                توسعه وب
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- footer2.2 -->
-                                    <div class="footer-box d-flex justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
-                                                <svg class="me-1" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
-                                                        stroke="#607496" stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M6.47668 4.67017H8.39812" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M3.59465 6.5918H8.39825" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                0
-                                            </a>
-                                            <button class="btn rounded-1 d-flex align-items-center me-2">
-                                                <svg class="me-1 -mt-0.5" fill="none" height="11" viewBox="0 0 13 11"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
-                                                        d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
-                                                        stroke="#E81C4D" stroke-width="0.761705"></path>
-                                                </svg>
-                                                0
-                                            </button>
-                                            <button class="btn rounded-1 d-flex align-items-center">
-                                                <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="">
-                                            <span class="d-flex align-items-center">
-                                                <svg class="me-1" width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
-                                                        fill="currentColor"></path>
-                                                    <path
-                                                        d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
-                                                        stroke="currentColor" stroke-width="0.923077"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                زمان مطالعه: 8 دقیقه
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- SMALL FOOTER -->
+                    <div class="footer mt-3 row mx-0">
+                        <div class="col-12 col-lg-5">
+                            <div class="d-flex">
+                                <ul class="d-flex flex-wrap list-unstyled">
+                                    <li class="me-2 mb-3 text-black fs-6  text-opacity-25">
+                                        موضوعات جذاب این هفته:
+                                    </li>
+                                    <li class="me-1 mb-2"><a
+                                            class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
+                                            href="#">#جاوااسکریپت</a></li>
+                                    <li class="me-1 mb-2"><a
+                                            class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
+                                            href="#">#لینوکس</a></li>
+                                    <li class="me-1 mb-2"><a
+                                            class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
+                                            href="#">#توسعه وب</a></li>
+                                    <li class="me-1 mb-2"><a
+                                            class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
+                                            href="#">#آموزشی</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="bg-white shadow-sm rounded p-3 mb-4">
-                            <a class="overflow-hidden rounded-1 w-100 d-block" href="#"><img class="w-100 h-100"
-                                    src=".//image/JcOBE9QCPcdAsyHqhKaApQEKUIf0bYEE2GYyvvXl.jpg" alt="">
-                            </a>
-                            <!-- p2 body -->
-                            <div>
-                                <!-- 2/1 TITLE -->
-                                <div>
-                                    <h4 class=""><a class="text-decoration-none text-light-emphasis fs-5 fw-bold"
-                                            href="#">مقایسه Flask و Express.js</a></h4>
-                                </div>
-                                <!-- 2/2 -->
-                                <div>
-                                    <!-- .name ARASTU2.1 -->
-                                    <div class="name mb-1 d-flex justify-content-between">
-                                        <div class="d-flex align-content-center">
-                                            <img class="me-1 rounded-circle"
-                                                src=".//image/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="">
-                                            <h6 class=""><a class="text-decoration-none " href="#">ارسطو عباسی</a></h6>
-                                        </div>
-                                        <div>
-                                            <a class="text-decoration-none d-flex justify-content-center rounded-1 px-2 py-1 fw-semibold"
-                                                href="#">
-                                                <svg class="me-1" width="15" height="10" viewBox="0 0 10 10" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="fill-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M5.00525 4.99988C4.77513 4.99988 4.58858 5.18643 4.58858 5.41654C4.58858 5.64666 4.77513 5.83321 5.00525 5.83321L6.67725 5.83321C6.90737 5.83321 7.09392 5.64666 7.09392 5.41654C7.09392 5.18643 6.90737 4.99988 6.67725 4.99988H5.00525ZM3.3335 6.67224C3.10338 6.67224 2.91683 6.85879 2.91683 7.08891C2.91683 7.31903 3.10338 7.50557 3.3335 7.50557L6.6775 7.50557C6.90762 7.50557 7.09416 7.31903 7.09416 7.08891C7.09416 6.85879 6.90762 6.67224 6.6775 6.67224L3.3335 6.67224Z">
-                                                    </path>
-                                                    <path
-                                                        class="stroke-current transition duration-200 text-blue-700 group-hover:text-white"
-                                                        d="M7.08323 2.17834C6.6357 2.13634 6.1178 2.11907 5.52165 2.11907C1.83979 2.11907 0.958571 2.77779 0.528906 5.85116C0.46337 6.31993 0.424047 6.73253 0.41753 7.09518M7.08323 2.17834C9.3997 2.39569 9.83099 3.27541 9.47089 5.85116C9.04123 8.92452 8.16001 9.58323 4.47814 9.58323C1.35787 9.58323 0.381319 9.11014 0.41753 7.09518M7.08323 2.17834C7.08323 2.17834 7.14666 1.79476 7.08323 1.28972C6.92699 0.0456842 1.79278 0.208173 1.24992 1.28972C0.417377 2.9484 0.41753 7.09518 0.41753 7.09518"
-                                                        stroke-width="0.833333" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                توسعه وب
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- footer2.2 -->
-                                    <div class="footer-box d-flex justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <a class="px-1 me-2 d-flex align-items-center  rounded-1" href="#">
-                                                <svg class="me-1" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5.99646 0.827528C7.17456 0.827528 8.09169 0.881027 8.80899 1.01903C9.52386 1.15656 10.0045 1.37154 10.3411 1.66825C11.0098 2.25772 11.2804 3.32306 11.2804 5.47101C11.2804 6.85518 11.1561 7.87367 10.8215 8.53718C10.661 8.85564 10.4576 9.07995 10.2017 9.22916C9.94304 9.37996 9.59628 9.474 9.11892 9.474C8.5035 9.474 8.0416 9.61219 7.68041 9.85692C7.32786 10.0958 7.11521 10.4085 6.95703 10.6574C6.9331 10.6951 6.91069 10.7307 6.88949 10.7643C6.75685 10.9749 6.67103 11.1111 6.55187 11.2181C6.44568 11.3134 6.29728 11.3954 5.99659 11.3954C5.69593 11.3954 5.54754 11.3133 5.44133 11.218C5.32218 11.1111 5.23635 10.9749 5.10373 10.7643C5.08251 10.7307 5.0601 10.6951 5.03616 10.6574C4.87797 10.4085 4.66531 10.0958 4.31276 9.8569C3.95156 9.61218 3.48966 9.474 2.87424 9.474C2.39941 9.474 2.05376 9.37759 1.79518 9.22368C1.53855 9.07092 1.33387 8.84146 1.17225 8.51818C0.836472 7.84655 0.712507 6.82628 0.712507 5.47101C0.712507 3.35035 0.982347 2.28225 1.65335 1.68581C1.99094 1.38572 2.47232 1.1667 3.18628 1.02566C3.90284 0.884101 4.81936 0.827528 5.99646 0.827528Z"
-                                                        stroke="#607496" stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M6.47668 4.67017H8.39812" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M3.59465 6.5918H8.39825" stroke="#607496"
-                                                        stroke-width="0.960719" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                0
-                                            </a>
-                                            <button class="btn rounded-1 d-flex align-items-center me-2">
-                                                <svg class="me-1 -mt-0.5" fill="none" height="11" viewBox="0 0 13 11"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        class="stroke-current transition duration-200 dark:group-hover:bg-red-650 text-red-450 group-hover:text-white"
-                                                        d="M3.95035 1.229C4.81955 1.229 5.61243 1.66166 6.21284 2.15457C6.81326 1.66166 7.60614 1.229 8.47534 1.229C10.3497 1.229 11.8691 2.62275 11.8691 4.34192C11.8691 7.80824 7.92382 9.82702 6.62321 10.3984C6.36123 10.5134 6.06445 10.5134 5.80248 10.3984C4.50187 9.827 0.556602 7.80816 0.556602 4.34184C0.556602 2.62267 2.07603 1.229 3.95035 1.229Z"
-                                                        stroke="#E81C4D" stroke-width="0.761705"></path>
-                                                </svg>
-                                                0
-                                            </button>
-                                            <button class="btn rounded-1 d-flex align-items-center">
-                                                <svg width="10" height="12" fill="none" viewBox="0 0 10 12"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M2.51974 10.651L2.51972 10.651L2.51551 10.654C2.00961 11.009 1.31115 10.6877 1.26272 10.0631C1.20578 9.32899 1.12994 7.98392 1.12995 6.02793V5.99265V5.99264C1.12994 5.21616 1.13036 4.53967 1.18575 3.97518C1.24191 3.40288 1.35849 2.89041 1.62915 2.47298C2.19514 1.60008 3.28533 1.34809 4.99817 1.34104C6.71301 1.33397 7.80474 1.58477 8.37131 2.46321C8.64158 2.88225 8.75804 3.39711 8.81416 3.97134C8.86955 4.538 8.86997 5.21625 8.86995 5.993V6.02794C8.86995 7.98392 8.7941 9.32899 8.73716 10.0631C8.68873 10.6877 7.99029 11.009 7.48439 10.654L7.48441 10.654L7.48016 10.651C7.03638 10.3475 6.6257 10.0207 6.30567 9.76593L6.29989 9.76133C6.15447 9.64555 6.02249 9.54047 5.91897 9.46373C5.7247 9.31973 5.56248 9.2214 5.41218 9.16087C5.24859 9.095 5.11648 9.08089 4.99995 9.08089C4.88342 9.08089 4.75131 9.095 4.58772 9.16088C4.43742 9.2214 4.2752 9.31973 4.08093 9.46373C3.97737 9.54049 3.8453 9.64565 3.69982 9.76147L3.69423 9.76592C3.3742 10.0207 2.96352 10.3475 2.51974 10.651Z"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path class="stroke-current text-blue-700 group-hover:text-white"
-                                                        d="M5.86 3.06262C6.29 3.06262 6.505 3.06099 6.8275 3.38265C7.15 3.70432 7.15 4.78095 7.15 5.21094"
-                                                        stroke-width="0.86" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="">
-                                            <span class="d-flex align-items-center">
-                                                <svg class="me-1" width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M2.60509 1.45136C2.44111 1.61533 2.36357 1.8075 2.33008 2.00642C2.93427 1.89004 3.6854 1.84615 4.61527 1.84615C5.54514 1.84615 6.29627 1.89004 6.90046 2.00642C6.86697 1.8075 6.78942 1.61533 6.62545 1.45136C6.37407 1.19998 5.82701 0.923077 4.61527 0.923077C3.40353 0.923077 2.85647 1.19998 2.60509 1.45136ZM1.95237 0.798643C1.44953 1.30148 1.38477 1.91343 1.3845 2.30521C0.299759 2.83849 -0.000112534 3.92458 -0.000112534 6C-0.000112534 8.07542 0.299759 9.16151 1.3845 9.69479C1.38477 10.0866 1.44953 10.6985 1.95237 11.2014C2.45099 11.7 3.28854 12 4.61527 12C5.942 12 6.77955 11.7 7.27817 11.2014C7.78101 10.6985 7.84577 10.0866 7.84604 9.69479C8.93079 9.16151 9.23066 8.07542 9.23066 6C9.23066 3.92458 8.93079 2.83849 7.84604 2.30521C7.84577 1.91344 7.78101 1.30149 7.27817 0.798644C6.77955 0.300024 5.942 0 4.61527 0C3.28854 0 2.45099 0.300024 1.95237 0.798643ZM6.90046 9.99358C6.29626 10.11 5.54514 10.1538 4.61527 10.1538C3.68541 10.1538 2.93428 10.11 2.33008 9.99358C2.36357 10.1925 2.44111 10.3847 2.60509 10.5486C2.85647 10.8 3.40353 11.0769 4.61527 11.0769C5.82701 11.0769 6.37407 10.8 6.62545 10.5486C6.78943 10.3847 6.86696 10.1925 6.90046 9.99358ZM1.4998 8.67356C1.15669 8.36477 0.922964 7.73297 0.922964 6C0.922964 4.26703 1.15669 3.63523 1.4998 3.32643C1.67362 3.16999 1.9565 3.02236 2.47171 2.91931C2.99245 2.81515 3.68384 2.76923 4.61527 2.76923C5.54671 2.76923 6.2381 2.81515 6.75883 2.91931C7.27405 3.02236 7.55692 3.16999 7.73075 3.32643C8.07385 3.63523 8.30758 4.26703 8.30758 6C8.30758 7.73297 8.07385 8.36477 7.73075 8.67356C7.55692 8.83001 7.27405 8.97764 6.75883 9.08069C6.2381 9.18485 5.54671 9.23077 4.61527 9.23077C3.68384 9.23077 2.99245 9.18485 2.47171 9.08069C1.9565 8.97764 1.67362 8.83001 1.4998 8.67356Z"
-                                                        fill="currentColor"></path>
-                                                    <path
-                                                        d="M4.61548 4.15381C4.61548 4.15381 4.61548 5.07689 4.61548 5.53842C4.61548 5.99996 4.61547 5.99996 5.07702 5.99996C5.53856 5.99996 6.92317 5.99996 6.92317 5.99996"
-                                                        stroke="currentColor" stroke-width="0.923077"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                زمان مطالعه: 8 دقیقه
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- SMALL FOOTER -->
-                <div class="footer mt-3 row mx-0">
-                    <div class=" col-lg-12 col-xl-6">
-                        <div class="d-flex">
-                            <ul class="d-flex flex-wrap list-unstyled">
-                                <li class="me-2 mb-3 text-black fs-6  text-opacity-25">
-                                    موضوعات جذاب این هفته:
-                                </li>
-                                <li class="me-1 mb-2"><a
-                                        class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
-                                        href="#">#جاوااسکریپت</a></li>
-                                <li class="me-1 mb-2"><a
-                                        class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
-                                        href="#">#لینوکس</a></li>
-                                <li class="me-1 mb-2"><a
-                                        class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
-                                        href="#">#توسعه وب</a></li>
-                                <li class="me-1 mb-2"><a
-                                        class="text-decoration-none fw-bold pt-1 px-2 border text-secondary rounded-1"
-                                        href="#">#آموزشی</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
         <!-- BANNER 2 -->
         <section class="mb-32 mt-lg-52 mt-20">
             <div class="container ">
-                <div class="banner-2 d-flex align-items-center justify-content-end w-100 rounded-5 position-relative">
-                    <img src=".//image/index_instagram_phone.png" class="position-absolute" alt="">
-                    <h6 class="text-white fw-bolder
-                    ">ما هر روز کلی مطالب آموزشی جالب در اینستاگراممون منتشر می‌کنیم!</h6>
-                    <a class="d-flex bg-white rounded-2 align-items-center" href="#">
+                <div class="banner-2 d-flex flex-column flex-xl-row align-items-center justify-content-xl-end w-100 
+                 position-relative  px-sm-16 mx-sm-10 py-xl-5 ">
+                    <img src=".//image/index_instagram_phone.png"
+                        class="position-absolute top-sm-28 scale-lg-100 translate-x-lg-0 right-lg-0 top-lg-20" alt="">
+                    <h6 class="text-white fw-bolder m-xl-0 text-center ml-lg-10 text-md-2xl">ما هر روز کلی مطالب آموزشی
+                        جالب در اینستاگراممون منتشر می‌کنیم!</h6>
+                    <a class="d-flex bg-white rounded-2 align-items-center text-lg-15" href="#">
                         مشاهده پست های اینستاگرام
                         <svg width="16" height="11" viewBox="0 0 16 11" fill="none" class="ms-2"
                             xmlns="http://www.w3.org/2000/svg">
@@ -3338,7 +3370,7 @@
 
 
     <script>
-        $(function(){
+        $(function () {
 
             $(".owl-1").owlCarousel({
                 rtl: true,
@@ -3363,7 +3395,7 @@
                     1380: {
                         items: 4
                     }
-    
+
                 }
             });
 
@@ -3392,10 +3424,10 @@
 
 
 
-            
-                    $('#btn-drop').click(function () {
-                        $('.my-menu-grid ').toggleClass('disp-none')
-                    })
+
+            $('#btn-drop').click(function () {
+                $('.my-menu-grid ').toggleClass('disp-none')
+            })
 
 
 
