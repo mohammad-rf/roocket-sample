@@ -1,375 +1,359 @@
-main{
-    margin-bottom: 5rem;
-    margin-top: 3.5rem;
-    word-spacing: -3px;
+main {
+  margin-bottom: 5rem;
+  margin-top: 3.5rem;
+  word-spacing: -3px;
 }
-main > div >div {
-    grid-template-columns: repeat(12,1fr);
-    gap: 1.5rem;
-} 
-
-
-.main-part{
-    grid-column:span 12 / span 12
+main > div > div {
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
 }
 
-.aside-part{
-    grid-column: span 12 / span 12;
+.main-part {
+  grid-column: span 12 / span 12;
 }
 
-
+.aside-part {
+  grid-column: span 12 / span 12;
+}
 
 /* PARAGRAPH */
-.paragraph{
-    padding: 2rem;
-    margin-bottom: 2rem;
+.paragraph {
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 .paragraph > div:first-child {
-    height: 12rem;
-    margin-bottom: 2rem;
+  height: 12rem;
+  margin-bottom: 2rem;
 }
 
-
 /* PART2 CAPTION */
-.caption div:first-child a{
-    color: rgba(59,130,246,1);
-    background-color: rgba(243,247,254,1);
-    padding:.5rem 1.25rem ;
-    font-size: 14px;
+.caption div:first-child a {
+  color: rgba(59, 130, 246, 1);
+  background-color: rgba(243, 247, 254, 1);
+  padding: 0.5rem 1.25rem;
+  font-size: 14px;
 }
 
 .caption div:last-child {
-    color: rgba(149,160,177,1);
-    font-size: 14px;
+  color: rgba(149, 160, 177, 1);
+  font-size: 14px;
 }
 
 /* PART3 TEXT */
-.text{
-    margin-top: 1.75rem;
+.text {
+  margin-top: 1.75rem;
 }
-.text h1{
-    font-size: 1.4rem;
-    line-height: 1.47rem;
-    color: rgba(51,65,85,.95);
-    margin-bottom: 28px;
+.text h1 {
+  font-size: 1.4rem;
+  line-height: 1.47rem;
+  color: rgba(51, 65, 85, 0.95);
+  margin-bottom: 28px;
 }
 .text p {
-    margin: 1.25rem 0;
-    color: rgba(55,65,81,.9);
-    line-height: 2.3;
-    word-spacing: 1.1px;
-    font-weight: 400;
-    font-size: 16px;
+  margin: 1.25rem 0;
+  color: rgba(55, 65, 81, 0.9);
+  line-height: 2.3;
+  word-spacing: 1.1px;
+  font-weight: 400;
+  font-size: 16px;
 }
-.text h2{
-    margin: 20px 0;
-    font-size: 23px;
-    line-height: 2.1;
-    color: rgba(19,15,38,.95);
-    font-weight: bold;
+.text h2 {
+  margin: 20px 0;
+  font-size: 23px;
+  line-height: 2.1;
+  color: rgba(19, 15, 38, 0.95);
+  font-weight: bold;
 }
 /* PARDT4 FOOTER OF ARTICLE */
-.score{
-    padding: 12px 20px;
+.score {
+  padding: 12px 20px;
 }
 .score p {
-    color: rgba(121,137,158,1);
-    line-height: 1.3rem;
-    margin-bottom: 1.25rem;
-    font-size: 12px;
-
+  color: rgba(121, 137, 158, 1);
+  line-height: 1.3rem;
+  margin-bottom: 1.25rem;
+  font-size: 12px;
 }
-.score div div span svg{
-    color: rgba(255,220,38,1);
-    width: 1.25rem;
-    
+.score div div span svg {
+  color: rgba(255, 220, 38, 1);
+  width: 1.25rem;
 }
-.score div div:last-child  {
-    font-size: 14px;
-    color: rgba(121,137,158,1);
+.score div div:last-child {
+  font-size: 14px;
+  color: rgba(121, 137, 158, 1);
 }
-.paragraph hr{
-    margin-bottom: 40px !important;
-    margin-top: 28px !important;
-    opacity: .1;
+.paragraph hr {
+  margin-bottom: 40px !important;
+  margin-top: 28px !important;
+  opacity: 0.1;
 }
 /*3  */
-#tag{
-    margin-bottom: 20px;
+#tag {
+  margin-bottom: 20px;
 }
-#div1{
-    color: rgba(149,160,177,1);
-    font-size: 14px;
-    line-height: 1.55rem;
-}
-
-#div2 a{
-    padding: 6px 12px 4px;
-    color: rgba(51,65,85,1);
-    background-color: rgba(227,230,236,1);
-    font-size: 12px;
-    line-height: 1.27rem;
-    height: 1.75rem;
-    font-weight: 500;
-}
-#div2 a span::before{
-    content: '#';
+#div1 {
+  color: rgba(149, 160, 177, 1);
+  font-size: 14px;
+  line-height: 1.55rem;
 }
 
-/*  */
-
-#copy ul li , #copy ul li a{
-    color: rgba(149,160,177,1);
+#div2 a {
+  padding: 6px 12px 4px;
+  color: rgba(51, 65, 85, 1);
+  background-color: rgba(227, 230, 236, 1);
+  font-size: 12px;
+  line-height: 1.27rem;
+  height: 1.75rem;
+  font-weight: 500;
 }
-#div4 svg{
-    color: rgba(149,160,177,1);
-    left: .75rem;
-}
-#div4  input {
-    color: rgba(149,160,177,1);
-    direction: ltr;
-    padding: 6px 12px 6px 32px ;
-    font-size: 12px;
+#div2 a span::before {
+  content: "#";
 }
 
-/* قسمت دوم بخش اصلی  فوتر پاراگراف */
-.follow{
-    padding: 28px 48px 36px; 
-    margin-bottom: 48px;
+#copy ul li,
+#copy ul li a {
+  color: rgba(149, 160, 177, 1);
+}
+#div4 svg {
+  color: rgba(149, 160, 177, 1);
+  left: 0.75rem;
+}
+#div4 input {
+  color: rgba(149, 160, 177, 1);
+  direction: ltr;
+  padding: 6px 12px 6px 32px;
+  font-size: 12px;
+}
+
+/* sec part of paragraph of footer  */
+.follow {
+  padding: 28px 48px 36px;
+  margin-bottom: 48px;
 }
 .follow > a {
-    height: 4rem;
-    width: 4rem;
-    margin-inline-end: 2rem;
+  height: 4rem;
+  width: 4rem;
+  margin-inline-end: 2rem;
 }
 
-.follow div:has(button){
-    margin-block: 6px;
+.follow div:has(button) {
+  margin-block: 6px;
 }
-.follow button{
-    font-size: 10px;
-    line-height: 1rem;
-    padding: 0 24px;
-    height: 2rem;
-    border-color: rgb(59,130,246);
+.follow button {
+  font-size: 10px;
+  line-height: 1rem;
+  padding: 0 24px;
+  height: 2rem;
+  border-color: rgb(59, 130, 246);
 }
-.follow h5 a{
-    color: rgba(71,84,102,1);
-    font-size: 1rem;
-    line-height: 1.78rem;
-    
+.follow h5 a {
+  color: rgba(71, 84, 102, 1);
+  font-size: 1rem;
+  line-height: 1.78rem;
 }
 .follow h6 {
-    color: rgba(133,177,249,1);
-    font-size: 13px;
-    
+  color: rgba(133, 177, 249, 1);
+  font-size: 13px;
 }
 
-.follow div > p{
-    margin-top: 6px;
-    margin-bottom: 0;
-    font-size: 12px;
-    color: rgba(149,160,177,1);
-    line-height: 1.27rem;
-
+.follow div > p {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: rgba(149, 160, 177, 1);
+  line-height: 1.27rem;
 }
 
 /* SIMILAR POSTS */
 
-.similar{
-    margin-bottom: 4rem;
+.similar {
+  margin-bottom: 4rem;
 }
-.similar h3{
-    color: rgba(51,65,85,1);
-    font-size: 2.2rem;
+.similar h3 {
+  color: rgba(51, 65, 85, 1);
+  font-size: 2.2rem;
 }
 
-.similar > div{
-    grid-template-columns:1fr;
-    gap: .75rem;
+.similar > div {
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
 }
 /* COMMENT */
-.comment{
-    padding: 36px 16px 24px ;
+.comment {
+  padding: 36px 16px 24px;
 }
-.comment > div:nth-child(2){
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
+.comment > div:nth-child(2) {
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
 }
 .comment > div:first-child h4 {
-    color: rgba(59,130,246,1);
-    word-spacing: -5px;
-    font-size: 24px;
+  color: rgba(59, 130, 246, 1);
+  word-spacing: -5px;
+  font-size: 24px;
 }
 .comment div h4 i {
-    height: 0.5rem;
-    width: 0.5rem;
-    background-color:rgba(59,130,246,1) ;
-    border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: rgba(59, 130, 246, 1);
+  border-radius: 50%;
 }
-
-/*  */
 
 .comment div:nth-child(2) {
-    background-color: rgba(255,190,23,1);
+  background-color: rgba(255, 190, 23, 1);
 }
 
-.comment div:nth-child(2) h3{
-    line-height: 1.75rem;
-    font-size: 18px;
+.comment div:nth-child(2) h3 {
+  line-height: 1.75rem;
+  font-size: 18px;
 }
 
 .comment div:nth-child(2) > a {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /*  */
 
-.comment > div:last-child{
-   height: 177px;
+.comment > div:last-child {
+  height: 177px;
 }
 
-/* ///////// ASIDE////////// */ 
+/* ASIDE */
 
-.study{
-    padding: 1rem 2rem;
-    margin-bottom: 20px;
-    color: rgba(59,130,246,1);
+.study {
+  padding: 1rem 2rem;
+  margin-bottom: 20px;
+  color: rgba(59, 130, 246, 1);
 }
-.study span{
-    line-height: 1.76rem;
+.study span {
+  line-height: 1.76rem;
 }
 .aside-part .follow-2 {
-    padding:  20px 16px;
-    margin-bottom: 20px;
+  padding: 20px 16px;
+  margin-bottom: 20px;
 }
 
-.follow-2 div:first-child a{ 
-    height: 3.5rem;
-    width: 3.5rem;
-    display: inline-block;
-    margin-left: 12px;
+.follow-2 div:first-child a {
+  height: 3.5rem;
+  width: 3.5rem;
+  display: inline-block;
+  margin-left: 12px;
 }
 
-.follow-2 button{
-    font-size: 8px;
-    line-height: 1rem;
-    padding: 4px 20px;
-    border-color: rgb(59,130,246);
+.follow-2 button {
+  font-size: 8px;
+  line-height: 1rem;
+  padding: 4px 20px;
+  border-color: rgb(59, 130, 246);
 }
-.follow-2 > div:last-child > a{
-    color: rgba(71,84,102,1);
-    font-size: 20px;  
-}
-
-.follow-2 div > p{
-    margin-bottom: 12px;
-    font-size: 10px;
-    color: rgba(149,160,177,1);
-    line-height: 1.1rem;
+.follow-2 > div:last-child > a {
+  color: rgba(71, 84, 102, 1);
+  font-size: 20px;
 }
 
-/* 5 مقاله اخیر */
+.follow-2 div > p {
+  margin-bottom: 12px;
+  font-size: 10px;
+  color: rgba(149, 160, 177, 1);
+  line-height: 1.1rem;
+}
+
+/* 5 recent article*/
 /* title */
-.aside-part :nth-child(3){
-    margin-bottom: 20px;
+.aside-part :nth-child(3) {
+  margin-bottom: 20px;
 }
-.last-article{
-    padding: 28px 20px;
+.last-article {
+  padding: 28px 20px;
 }
-.last-article > div:first-child >div:first-child {
-    color: rgba(51,65,85,1);
+.last-article > div:first-child > div:first-child {
+  color: rgba(51, 65, 85, 1);
 }
-.last-article > div:first-child div p{
-    color: rgba(100,116,139,1);
-    font-size: 11px;
+.last-article > div:first-child div p {
+  color: rgba(100, 116, 139, 1);
+  font-size: 11px;
 }
-.last-article > div:first-child div span{
-    font-size: 15px;
-    color: rgba(51,65,85,1);
+.last-article > div:first-child div span {
+  font-size: 15px;
+  color: rgba(51, 65, 85, 1);
 }
 /* 5BOXES */
-.article-5-boxes{
-    margin-bottom: 32px;
+.article-5-boxes {
+  margin-bottom: 32px;
 }
-.article-box{
-    margin-bottom: 12px;
-
+.article-box {
+  margin-bottom: 12px;
 }
-.article-box > div:first-child span{
-    background-color: rgba(59,130,246,1);
-    width: 0.25rem;
-    height: 102%;
-    right: -1rem;
-    border-bottom-left-radius: .375rem;
-    border-top-left-radius: .375rem;
+.article-box > div:first-child span {
+  background-color: rgba(59, 130, 246, 1);
+  width: 0.25rem;
+  height: 102%;
+  right: -1rem;
+  border-bottom-left-radius: 0.375rem;
+  border-top-left-radius: 0.375rem;
 }
-.article-box > div:first-child a{
-    color: rgba(51,65,85,.95);
-    font-size: 13px;
-    font-weight: bold;
+.article-box > div:first-child a {
+  color: rgba(51, 65, 85, 0.95);
+  font-size: 13px;
+  font-weight: bold;
 }
 .article-box > div:last-child {
-    color: rgba(149,160,177,1);
-    font-size: 8px;
-    font-weight: 500;
+  color: rgba(149, 160, 177, 1);
+  font-size: 8px;
+  font-weight: 500;
 }
 .article-box > div:last-child span {
-    width: 1px;
-    height: 0.75rem;
-    background-color: rgba(227,230,236,1);
+  width: 1px;
+  height: 0.75rem;
+  background-color: rgba(227, 230, 236, 1);
 }
-/*  */
 
-.last-article > div:last-child a{
-    font-size: 11px;
-    padding: 12px 20px ;
+.last-article > div:last-child a {
+  font-size: 11px;
+  padding: 12px 20px;
 }
 
 /* BANNER */
 
-.banner-1  {
-    padding: 40px 80px;
-    background-image: linear-gradient(to right ,#104164 ,#205e8a );
+.banner-1 {
+  padding: 40px 80px;
+  background-image: linear-gradient(to right, #104164, #205e8a);
 }
-.banner-1 div:first-child> svg{
-    height: 3rem;
-    width: 3rem;
-    top: .25rem;
+.banner-1 div:first-child > svg {
+  height: 3rem;
+  width: 3rem;
+  top: 0.25rem;
 }
-.banner-1  div >h3{
-    font-size: 2.4rem;
+.banner-1 div > h3 {
+  font-size: 2.4rem;
 }
-.banner-1  div >span{
-    color: rgba(255,220,38,1);
-    border-color: rgba(255,220,38,1) !important;
-    font-size: 14px;
+.banner-1 div > span {
+  color: rgba(255, 220, 38, 1);
+  border-color: rgba(255, 220, 38, 1) !important;
+  font-size: 14px;
 }
-.banner-1  div >p:nth-child(2){
-    color: rgba(243,247,254,1);
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    word-spacing: -3px;
+.banner-1 div > p:nth-child(2) {
+  color: rgba(243, 247, 254, 1);
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  word-spacing: -3px;
 }
-.banner-1  div >p:nth-last-child(2){
-    font-size: 14px;
-}
-/*  */
-.banner1-sm >  div:first-child {
-    left:5.5rem;
+.banner-1 div > p:nth-last-child(2) {
+  font-size: 14px;
 }
 
-.banner1-sm >  div:first-child > svg{
-    width: 29rem;
-   height: 400px;
-   
+.banner1-sm > div:first-child {
+  left: 5.5rem;
 }
-.banner1-sm p{
-    font-size: 20px !important;
-    margin-top: 16px !important;
 
+.banner1-sm > div:first-child > svg {
+  width: 29rem;
+  height: 400px;
 }
-.banner1-sm p+span{
-    font-size: 15px;
-    color: white    !important;
+.banner1-sm p {
+  font-size: 20px !important;
+  margin-top: 16px !important;
+}
+.banner1-sm p + span {
+  font-size: 15px;
+  color: white !important;
 }
