@@ -17,15 +17,16 @@ main > div {
 .logo-header {
   margin-bottom: 2.75rem;
 }
+
 section {
   padding: 2.25rem 3.125rem;
   width: 29rem;
 }
-section .signin a:first-child {
-  color: rgba(59, 130, 246, 1);
-}
 .signin {
   margin-bottom: 2.25rem;
+}
+section .signin > a:first-child {
+  color: rgba(59, 130, 246, 1);
 }
 .signin a:last-child {
   color: rgba(255, 255, 255, 1);
@@ -61,9 +62,7 @@ section .signin a:first-child {
 .boxes-4 > div:hover {
   background-color: rgba(59, 130, 246, 0.2);
 }
-
 /* TYPE 2 SING IN */
-
 .line {
   border-top: 1px solid;
   color: rgba(149, 160, 177, 0.3);
